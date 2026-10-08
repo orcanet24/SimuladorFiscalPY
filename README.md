@@ -74,7 +74,7 @@ Cubre los 4 protocolos: TFHKA (ASCII), Hasar/Bixolon/Epson (IxBatch `@...`), not
 ## Estructura del proyecto
 
 ```
-SimuladorFiscalGO/
+SimuladorFiscalPY/
 ├── panel.py                   # Panel web (entry point)
 ├── sim.py                     # CLI serial
 ├── test_sim.py                # Suite de pruebas
