@@ -1,4 +1,4 @@
-# SimuladorFiscalGO
+# SimuladorFiscalPY
 
 Simulador de impresoras fiscales para Venezuela. Soporta las marcas TFHKA, Hasar SMH/P-615F, Bixolon SRP-270 y Epson TM2000, con panel web, memoria fiscal programable, papel virtual y reportes X/Z.
 
