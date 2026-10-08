@@ -1,0 +1,501 @@
+{
+ "saved_at": "2026-10-07T23:46:23.618640",
+ "brand": "TFHKA",
+ "model": "TFHKA",
+ "command_count": 8,
+ "history": [
+  {
+   "seq": 1,
+   "ts": "2026-10-07T23:46:23.317",
+   "command": "iR*V-99887766",
+   "response": "0|RIF registrado",
+   "ok": true
+  },
+  {
+   "seq": 2,
+   "ts": "2026-10-07T23:46:23.318",
+   "command": "iS*CLIENTE FINAL",
+   "response": "0|Nombre registrado",
+   "ok": true
+  },
+  {
+   "seq": 3,
+   "ts": "2026-10-07T23:46:23.320",
+   "command": "i01Av. 5",
+   "response": "0|Direccion registrada",
+   "ok": true
+  },
+  {
+   "seq": 4,
+   "ts": "2026-10-07T23:46:23.369",
+   "command": "!   2.000     25.90LECHE 1L",
+   "response": "0|Item|LECHE 1L|2.000|25.90|7.14|51.80",
+   "ok": true
+  },
+  {
+   "seq": 5,
+   "ts": "2026-10-07T23:46:23.415",
+   "command": "10051.80",
+   "response": "0|Pago: 51.80|Pendiente: 0.00",
+   "ok": true
+  },
+  {
+   "seq": 6,
+   "ts": "2026-10-07T23:46:23.455",
+   "command": "101",
+   "response": "0|Factura 1|Total: 51.80|Impreso:1",
+   "ok": true
+  },
+  {
+   "seq": 7,
+   "ts": "2026-10-07T23:46:23.500",
+   "command": "U0X",
+   "response": "0|Reporte X #1|Ventas: 51.80|IVA: 7.14|Impreso:2",
+   "ok": true
+  },
+  {
+   "seq": 8,
+   "ts": "2026-10-07T23:46:23.618",
+   "command": "U0Z",
+   "response": "0|Reporte Z #1|Ventas: 51.80|IVA: 7.14|Impreso:3",
+   "ok": true
+  }
+ ],
+ "serial_number": "MLTFHKA001",
+ "fiscal_registration": "J-30684527-1",
+ "rif": "J-30684527-1",
+ "mode": "fiscal",
+ "memory_status": "ok",
+ "current_state": "waiting",
+ "fiscal_counter": 1,
+ "invoice_counter": 1,
+ "credit_note_counter": 0,
+ "debit_note_counter": 0,
+ "non_fiscal_counter": 0,
+ "z_report_counter": 1,
+ "x_report_counter": 1,
+ "daily_closure_counter": 1,
+ "total_sales": 51.8,
+ "total_tax": 7.144827586206894,
+ "total_discounts": 0.0,
+ "total_surcharges": 0.0,
+ "daily_sales": 0.0,
+ "daily_tax": 0.0,
+ "daily_discounts": 0.0,
+ "daily_surcharges": 0.0,
+ "daily_invoices": 0,
+ "daily_credit_notes": 0,
+ "daily_debit_notes": 0,
+ "daily_non_fiscal": 0,
+ "tax_totals": {
+  "general": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "reduced": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "additional": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "exempt": {
+   "base": 0.0,
+   "tax": 0.0
+  }
+ },
+ "credit_note_totals": {
+  "general": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "reduced": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "additional": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "exempt": {
+   "base": 0.0,
+   "tax": 0.0
+  }
+ },
+ "debit_note_totals": {
+  "general": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "reduced": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "additional": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "exempt": {
+   "base": 0.0,
+   "tax": 0.0
+  }
+ },
+ "payment_totals": {},
+ "company": {
+  "rif": "J-30684527-1",
+  "razon_social": "COMERCIAL EJEMPLO C.A.",
+  "direccion": "Av. Libertador, Torre, Piso 5",
+  "municipio": "Libertador",
+  "ciudad": "Caracas",
+  "estado": "Distrito Capital",
+  "telefono": "0212-5550123",
+  "email": "",
+  "representante_legal": "MARIA GONZALEZ",
+  "cedula_representante": "V-12345678",
+  "actividad_economica": "52110 - Comercio al por menor",
+  "nif": "",
+  "moneda": "Bs.",
+  "logo_text": "",
+  "condiciones_pago": "CONTADO",
+  "contribuyente_especial": true,
+  "agente_retencion": true
+ },
+ "headers": [
+  "COMERCIAL EJEMPLO C.A.",
+  "RIF: J-30684527-1",
+  "Av. Libertador, Torre, Piso 5",
+  "Libertador - Distrito Capital",
+  "TEL: 0212-5550123",
+  "REP. LEGAL: MARIA GONZALEZ",
+  "",
+  ""
+ ],
+ "footers": {
+  "footer1": "GRACIAS POR SU COMPRA",
+  "footer2": "",
+  "footer3": "",
+  "footer4": "",
+  "footer5": "",
+  "footer6": "",
+  "footer7": "",
+  "footer8": ""
+ },
+ "flags": {
+  "print_logo": false,
+  "reduce_z_report": false,
+  "print_z_report_items": false,
+  "print_customer_data": false,
+  "dont_open_drawer": false,
+  "paper_sensor_enabled": true
+ },
+ "document_open": false,
+ "document_type": null,
+ "current_items": [],
+ "subtotal_bases": 0.0,
+ "subtotal_tax": 0.0,
+ "amount_payable": 0.0,
+ "payments_made": 0.0,
+ "payment_count": 0,
+ "doc_payments": {},
+ "subtotal_printed": false,
+ "customer_rif": "",
+ "customer_name": "",
+ "customer_address": "",
+ "customer_phone": "",
+ "reference_invoice": "",
+ "reference_date": "",
+ "reference_serial": "",
+ "audit_memory_number": 1,
+ "audit_memory_total": 4.0,
+ "audit_memory_free": 3.4989395141601562,
+ "audit_memory_used": 0.5010604858398438,
+ "z_reports": [
+  {
+   "type": "Z",
+   "number": 1,
+   "timestamp": "2026-10-07T23:46:23.618322",
+   "last_invoice": 1,
+   "last_credit_note": 0,
+   "last_debit_note": 0,
+   "total_sales": 51.8,
+   "total_tax": 7.144827586206894,
+   "total_discounts": 0.0,
+   "total_surcharges": 0.0,
+   "daily_invoices": 1,
+   "daily_credit_notes": 0,
+   "daily_debit_notes": 0,
+   "daily_non_fiscal": 0,
+   "lifetime_sales": 51.8,
+   "lifetime_tax": 7.144827586206894,
+   "tax_totals": {
+    "general": {
+     "base": 44.6551724137931,
+     "tax": 7.144827586206894
+    },
+    "reduced": {
+     "base": 0.0,
+     "tax": 0.0
+    },
+    "additional": {
+     "base": 0.0,
+     "tax": 0.0
+    },
+    "exempt": {
+     "base": 0.0,
+     "tax": 0.0
+    }
+   },
+   "credit_note_totals": {
+    "general": {
+     "base": 0.0,
+     "tax": 0.0
+    },
+    "reduced": {
+     "base": 0.0,
+     "tax": 0.0
+    },
+    "additional": {
+     "base": 0.0,
+     "tax": 0.0
+    },
+    "exempt": {
+     "base": 0.0,
+     "tax": 0.0
+    }
+   },
+   "debit_note_totals": {
+    "general": {
+     "base": 0.0,
+     "tax": 0.0
+    },
+    "reduced": {
+     "base": 0.0,
+     "tax": 0.0
+    },
+    "additional": {
+     "base": 0.0,
+     "tax": 0.0
+    },
+    "exempt": {
+     "base": 0.0,
+     "tax": 0.0
+    }
+   },
+   "payments": {
+    "cash": 51.8
+   }
+  }
+ ],
+ "x_reports": [
+  {
+   "type": "X",
+   "number": 1,
+   "timestamp": "2026-10-07T23:46:23.500387",
+   "last_invoice": 1,
+   "last_credit_note": 0,
+   "last_debit_note": 0,
+   "total_sales": 51.8,
+   "total_tax": 7.144827586206894,
+   "daily_invoices": 1,
+   "daily_credit_notes": 0,
+   "daily_debit_notes": 0,
+   "daily_non_fiscal": 0,
+   "tax_totals": {
+    "general": {
+     "base": 44.6551724137931,
+     "tax": 7.144827586206894
+    },
+    "reduced": {
+     "base": 0.0,
+     "tax": 0.0
+    },
+    "additional": {
+     "base": 0.0,
+     "tax": 0.0
+    },
+    "exempt": {
+     "base": 0.0,
+     "tax": 0.0
+    }
+   },
+   "payments": {
+    "cash": 51.8
+   }
+  }
+ ],
+ "print_jobs": [
+  {
+   "id": 1,
+   "kind": "receipt",
+   "title": "FACTURA FISCAL N° 00000001",
+   "ts": "2026-10-07T23:46:23",
+   "brand": "TFHKA",
+   "lines": [
+    "          COMERCIAL EJEMPLO C.A.          ",
+    "            RIF: J-30684527-1             ",
+    "      Av. Libertador, Torre, Piso 5       ",
+    " Libertador - Caracas - Distrito Capital  ",
+    "            Telf: 0212-5550123            ",
+    "    Rep. Legal: MARIA GONZALEZ - C.I.     ",
+    "                V-12345678                ",
+    " Actividad: 52110 - Comercio al por menor ",
+    "          CONTRIBUYENTE ESPECIAL          ",
+    "         AGENTE DE RETENCION IVA          ",
+    "==========================================",
+    "              FACTURA FISCAL              ",
+    "               N° 00000001                ",
+    "           07/10/2026  23:46:23           ",
+    "==========================================",
+    "CLIENTE:",
+    "  RIF/C.I: V-99887766",
+    "CLIENTE FINAL",
+    "Av. 5",
+    "------------------------------------------",
+    "   CANT DESCRIPCION          PREC  IVA   IMPORTE",
+    "------------------------------------------",
+    "  2.000 LECHE 1L            25.90  G16     51.80",
+    "------------------------------------------",
+    "SUBTOTAL:                            51,80",
+    "  BASE IVA 16%:                      44,66",
+    "  IVA 16%:                            7,14",
+    "==========================================",
+    "TOTAL Bs.:                           51,80",
+    "==========================================",
+    "EFECTIVO:                            51,80",
+    "------------------------------------------",
+    "  SON: CINCUENTA Y UNO CON 80/100",
+    "------------------------------------------",
+    "MAQUINA:                        MLTFHKA001",
+    "RIF MAQ.:                     J-30684527-1",
+    "COND. PAGO:                        CONTADO",
+    "        ART. 63 Ley IVA - Ley Org.        ",
+    "     Simplificacion y Racionalizacion     ",
+    "          del Proceso Tributario          ",
+    "------------------------------------------",
+    "          GRACIAS POR SU COMPRA           ",
+    "     * * * * * * * * * * * * * * * *      ",
+    "         DOCUMENTO FISCAL DIGITAL         ",
+    "       SIMULADOR - NO VALOR FISCAL        "
+   ],
+   "meta": {
+    "number": 1,
+    "total": 51.8,
+    "doc_type": "invoice"
+   }
+  },
+  {
+   "id": 2,
+   "kind": "x_report",
+   "title": "REPORTE X N° 0001",
+   "ts": "2026-10-07T23:46:23",
+   "brand": "TFHKA",
+   "lines": [
+    "          COMERCIAL EJEMPLO C.A.          ",
+    "            RIF: J-30684527-1             ",
+    "      Av. Libertador, Torre, Piso 5       ",
+    " Libertador - Caracas - Distrito Capital  ",
+    "            Telf: 0212-5550123            ",
+    "    Rep. Legal: MARIA GONZALEZ - C.I.     ",
+    "                V-12345678                ",
+    " Actividad: 52110 - Comercio al por menor ",
+    "          CONTRIBUYENTE ESPECIAL          ",
+    "         AGENTE DE RETENCION IVA          ",
+    "==========================================",
+    "        REPORTE X - CORTE DE CAJA         ",
+    "             REPORTE N° 0001              ",
+    "           07/10/2026  23:46:23           ",
+    "==========================================",
+    "DOCUMENTOS DEL DIA:",
+    "  Facturas:                              1",
+    "  Notas de credito:                      0",
+    "  Notas de debito:                       0",
+    "  No fiscales:                           0",
+    "------------------------------------------",
+    "VENTAS POR ALICUOTA:",
+    "  GENERAL 16%:                       44,66",
+    "    IVA:                              7,14",
+    "------------------------------------------",
+    "FORMAS DE PAGO:",
+    "  EFECTIVO:                          51,80",
+    "==========================================",
+    "TOTAL VENTAS:                        51,80",
+    "TOTAL IVA:                            7,14",
+    "==========================================",
+    "         ESTE REPORTE NO REINICIA         ",
+    "           LOS TOTALES DEL DIA            ",
+    "------------------------------------------",
+    "ULTIMA FACTURA:                   00000001",
+    "     * * * * * * * * * * * * * * * *      ",
+    "       SIMULADOR - NO VALOR FISCAL        "
+   ],
+   "meta": {
+    "number": 1,
+    "total_sales": 51.8,
+    "total_tax": 7.14
+   }
+  },
+  {
+   "id": 3,
+   "kind": "z_report",
+   "title": "REPORTE Z N° 0001",
+   "ts": "2026-10-07T23:46:23",
+   "brand": "TFHKA",
+   "lines": [
+    "          COMERCIAL EJEMPLO C.A.          ",
+    "            RIF: J-30684527-1             ",
+    "      Av. Libertador, Torre, Piso 5       ",
+    " Libertador - Caracas - Distrito Capital  ",
+    "            Telf: 0212-5550123            ",
+    "    Rep. Legal: MARIA GONZALEZ - C.I.     ",
+    "                V-12345678                ",
+    " Actividad: 52110 - Comercio al por menor ",
+    "          CONTRIBUYENTE ESPECIAL          ",
+    "         AGENTE DE RETENCION IVA          ",
+    "==========================================",
+    "        REPORTE Z - CIERRE DIARIO         ",
+    "             REPORTE N° 0001              ",
+    "           07/10/2026  23:46:23           ",
+    "==========================================",
+    "DOCUMENTOS DEL DIA:",
+    "  Facturas:                              1",
+    "  Notas de credito:                      0",
+    "  Notas de debito:                       0",
+    "  No fiscales:                           0",
+    "------------------------------------------",
+    "VENTAS POR ALICUOTA:",
+    "  GENERAL 16%:                       44,66",
+    "    IVA:                              7,14",
+    "------------------------------------------",
+    "FORMAS DE PAGO:",
+    "  EFECTIVO:                          51,80",
+    "==========================================",
+    "TOTAL VENTAS:                        51,80",
+    "TOTAL IVA:                            7,14",
+    "==========================================",
+    "              CIERRE DEL DIA              ",
+    "         TOTALES REINICIADOS TRAS         ",
+    "               ESTE REPORTE               ",
+    "------------------------------------------",
+    "ULTIMA FACTURA:                   00000001",
+    "CIERRES DIARIOS:                         1",
+    "     * * * * * * * * * * * * * * * *      ",
+    "       SIMULADOR - NO VALOR FISCAL        "
+   ],
+   "meta": {
+    "number": 1,
+    "total_sales": 51.8,
+    "total_tax": 7.14
+   }
+  }
+ ],
+ "print_job_seq": 3,
+ "tax_rates": {
+  "general": 16.0,
+  "reduced": 8.0,
+  "additional": 30.0
+ },
+ "tax_type": 1,
+ "last_invoice_date": "2026-10-07T23:46:23.455223",
+ "last_z_report_date": "2026-10-07T23:46:23.618350"
+}

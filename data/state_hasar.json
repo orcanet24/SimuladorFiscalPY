@@ -1,0 +1,245 @@
+{
+ "saved_at": "2026-10-07T23:57:26.585286",
+ "brand": "HASAR",
+ "model": "SMH/P-615F",
+ "command_count": 4,
+ "history": [
+  {
+   "seq": 1,
+   "ts": "2026-10-07T23:57:26.528",
+   "command": "@OpenFiscalReceipt",
+   "response": "@Response|OK|0|Documento fiscal abierto",
+   "ok": true
+  },
+  {
+   "seq": 2,
+   "ts": "2026-10-07T23:57:26.543",
+   "command": "@PrintLine|Cafe|2.0|15.0|general",
+   "response": "@Response|OK|0|Cafe|2.000|15.00|30.00",
+   "ok": true
+  },
+  {
+   "seq": 3,
+   "ts": "2026-10-07T23:57:26.569",
+   "command": "@Subtotal",
+   "response": "@Response|OK|0|Subtotal: 25.86+IVA:4.14",
+   "ok": true
+  },
+  {
+   "seq": 4,
+   "ts": "2026-10-07T23:57:26.585",
+   "command": "@Close",
+   "response": "@Response|OK|0|Factura 1 cerrada|Total: 30.00|Impreso:1",
+   "ok": true
+  }
+ ],
+ "serial_number": "MLHSR615F001",
+ "fiscal_registration": "J-98765432-1",
+ "rif": "J-98765432-1",
+ "mode": "fiscal",
+ "memory_status": "ok",
+ "current_state": "waiting",
+ "fiscal_counter": 1,
+ "invoice_counter": 1,
+ "credit_note_counter": 0,
+ "debit_note_counter": 0,
+ "non_fiscal_counter": 0,
+ "z_report_counter": 0,
+ "x_report_counter": 0,
+ "daily_closure_counter": 0,
+ "total_sales": 30.0,
+ "total_tax": 4.137931034482758,
+ "total_discounts": 0.0,
+ "total_surcharges": 0.0,
+ "daily_sales": 30.0,
+ "daily_tax": 4.137931034482758,
+ "daily_discounts": 0.0,
+ "daily_surcharges": 0.0,
+ "daily_invoices": 1,
+ "daily_credit_notes": 0,
+ "daily_debit_notes": 0,
+ "daily_non_fiscal": 0,
+ "tax_totals": {
+  "general": {
+   "base": 25.862068965517242,
+   "tax": 4.137931034482758
+  },
+  "reduced": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "additional": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "exempt": {
+   "base": 0.0,
+   "tax": 0.0
+  }
+ },
+ "credit_note_totals": {
+  "general": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "reduced": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "additional": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "exempt": {
+   "base": 0.0,
+   "tax": 0.0
+  }
+ },
+ "debit_note_totals": {
+  "general": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "reduced": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "additional": {
+   "base": 0.0,
+   "tax": 0.0
+  },
+  "exempt": {
+   "base": 0.0,
+   "tax": 0.0
+  }
+ },
+ "payment_totals": {},
+ "company": {
+  "rif": "",
+  "razon_social": "",
+  "direccion": "",
+  "municipio": "",
+  "ciudad": "",
+  "estado": "",
+  "telefono": "",
+  "email": "",
+  "representante_legal": "",
+  "cedula_representante": "",
+  "actividad_economica": "",
+  "nif": "",
+  "moneda": "Bs.",
+  "logo_text": "",
+  "condiciones_pago": "CONTADO",
+  "contribuyente_especial": false,
+  "agente_retencion": false
+ },
+ "headers": [
+  "RIF: J-12345678-9",
+  "FACTURA FISCAL",
+  "AVENIDA PRINCIPAL",
+  "CARACAS - VENEZUELA",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "footers": {
+  "footer1": "GRACIAS POR SU COMPRA",
+  "footer2": "",
+  "footer3": "",
+  "footer4": "",
+  "footer5": "",
+  "footer6": "",
+  "footer7": "",
+  "footer8": ""
+ },
+ "flags": {
+  "print_logo": false,
+  "reduce_z_report": false,
+  "print_z_report_items": false,
+  "print_customer_data": false,
+  "dont_open_drawer": false,
+  "paper_sensor_enabled": true
+ },
+ "document_open": false,
+ "document_type": null,
+ "current_items": [],
+ "subtotal_bases": 0.0,
+ "subtotal_tax": 0.0,
+ "amount_payable": 0.0,
+ "payments_made": 0.0,
+ "payment_count": 0,
+ "doc_payments": {},
+ "subtotal_printed": false,
+ "customer_rif": "",
+ "customer_name": "",
+ "customer_address": "",
+ "customer_phone": "",
+ "reference_invoice": "",
+ "reference_date": "",
+ "reference_serial": "",
+ "audit_memory_number": 1,
+ "audit_memory_total": 4.0,
+ "audit_memory_free": 3.4991283416748047,
+ "audit_memory_used": 0.5008716583251953,
+ "z_reports": [],
+ "x_reports": [],
+ "print_jobs": [
+  {
+   "id": 1,
+   "kind": "receipt",
+   "title": "FACTURA FISCAL N° 00000001",
+   "ts": "2026-10-07T23:57:26",
+   "brand": "HASAR",
+   "lines": [
+    "            EMPRESA SIN NOMBRE            ",
+    "==========================================",
+    "              FACTURA FISCAL              ",
+    "               N° 00000001                ",
+    "           07/10/2026  23:57:26           ",
+    "==========================================",
+    "CLIENTE:",
+    "  CONSUMIDOR FINAL",
+    "------------------------------------------",
+    "   CANT DESCRIPCION          PREC  IVA   IMPORTE",
+    "------------------------------------------",
+    "  2.000 Cafe                15.00  G16     30.00",
+    "------------------------------------------",
+    "SUBTOTAL:                            30,00",
+    "  BASE IVA 16%:                      25,86",
+    "  IVA 16%:                            4,14",
+    "==========================================",
+    "TOTAL Bs.:                           30,00",
+    "==========================================",
+    "------------------------------------------",
+    "  SON: TREINTA CON 00/100",
+    "------------------------------------------",
+    "MAQUINA:                      MLHSR615F001",
+    "RIF MAQ.:                     J-98765432-1",
+    "COND. PAGO:                        CONTADO",
+    "        ART. 63 Ley IVA - Ley Org.        ",
+    "     Simplificacion y Racionalizacion     ",
+    "          del Proceso Tributario          ",
+    "------------------------------------------",
+    "          GRACIAS POR SU COMPRA           ",
+    "     * * * * * * * * * * * * * * * *      ",
+    "         DOCUMENTO FISCAL DIGITAL         ",
+    "       SIMULADOR - NO VALOR FISCAL        "
+   ],
+   "meta": {
+    "number": 1,
+    "total": 30.0,
+    "doc_type": "invoice"
+   }
+  }
+ ],
+ "print_job_seq": 1,
+ "tax_rates": {
+  "general": 16.0,
+  "reduced": 8.0,
+  "additional": 30.0
+ },
+ "tax_type": 1,
+ "last_invoice_date": "2026-10-07T23:57:26.585286",
+ "last_z_report_date": null
+}
