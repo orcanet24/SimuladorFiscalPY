@@ -1,6 +1,6 @@
 # Fiscal Printer Docs Database
 
-SQLite database storing complete fiscal printer protocol documentation for the SimuladorFiscalGO project.
+SQLite database storing complete fiscal printer protocol documentation for the SimuladorFiscalPY project.
 
 ## Files
 
@@ -16,7 +16,7 @@ SQLite database storing complete fiscal printer protocol documentation for the S
 
 ```bash
 # Create and populate
-cd C:/Proyectos/GO/SimuladorFiscalGO
+cd SimuladorFiscalPY
 python create_database.py
 python populate_database.py
 

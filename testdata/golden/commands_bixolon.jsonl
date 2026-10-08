@@ -1,0 +1,137 @@
+{"scenario": "full_flow", "i": 0, "command": "@CustomerData|J-12345678-9|EMPRESA C.A.|Av Principal", "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA C.A."}
+{"scenario": "full_flow", "i": 1, "command": "@OpenFiscalReceipt", "response": "@Response|OK|0|Documento fiscal abierto"}
+{"scenario": "full_flow", "i": 2, "command": "@PrintLine|Cafe|2|15.00|general", "response": "@Response|OK|0|Cafe|2.000|15.00|30.00"}
+{"scenario": "full_flow", "i": 3, "command": "@PrintLine|Pan|3|8.00|reduced", "response": "@Response|OK|0|Pan|3.000|8.00|24.00"}
+{"scenario": "full_flow", "i": 4, "command": "@Subtotal", "response": "@Response|OK|0|Subtotal: 48.08+IVA:5.92"}
+{"scenario": "full_flow", "i": 5, "command": "@AddPayment|100.00|cash", "response": "@Response|OK|0|Pago: 100.00|Pendiente: -46.00"}
+{"scenario": "full_flow", "i": 6, "command": "@Close", "response": "@Response|OK|0|Factura 1 cerrada|Total: 54.00|Impreso:1"}
+{"scenario": "full_flow", "i": 7, "command": "@Status", "response": "@Response|OK|0|Status: 0x04|Error: 0x00|Doc: CERRADO|Ventas: 54.00"}
+{"scenario": "full_flow", "i": 8, "command": "@PrintZReport", "response": "@Response|OK|0|Reporte Z #1|Ventas: 54.00|Impreso:2"}
+{"scenario": "cross_status", "i": 0, "command": "@OpenFiscalReceipt", "response": "@Response|OK|0|Documento fiscal abierto"}
+{"scenario": "cross_status", "i": 1, "command": "@PrintLine|Item1|1|100.00|general", "response": "@Response|OK|0|Item1|1.000|100.00|100.00"}
+{"scenario": "cross_status", "i": 2, "command": "@AddPayment|116.00|cash", "response": "@Response|OK|0|Pago: 116.00|Pendiente: -16.00"}
+{"scenario": "cross_status", "i": 3, "command": "@Close", "response": "@Response|OK|0|Factura 1 cerrada|Total: 100.00|Impreso:1"}
+{"scenario": "cross_status", "i": 4, "command": "S1", "response": "0|MLBLN270001|J-55556666-3|1|0|1|0|0|0|100.00|<TS>"}
+{"scenario": "cross_status", "i": 5, "command": "S2", "response": "1|0|0|0.00|0.00|0.00|0"}
+{"scenario": "cross_status", "i": 6, "command": "S3", "response": "16.00|8.00|30.00|1|1|1"}
+{"scenario": "cross_status", "i": 7, "command": "S5", "response": "MLBLN270001|J-55556666-3|1|2.00|1.50|1"}
+{"scenario": "cross_status", "i": 8, "command": "S8E", "response": "RIF: J-12345678-9|FACTURA FISCAL|AVENIDA PRINCIPAL|CARACAS - VENEZUELA||||"}
+{"scenario": "cross_status", "i": 9, "command": "U0X", "response": "0|Reporte X #1|Ventas: 100.00|IVA: 13.79|Impreso:2"}
+{"scenario": "cross_status", "i": 10, "command": "@PrintZReport", "response": "@Response|OK|0|Reporte Z #1|Ventas: 100.00|Impreso:3"}
+{"scenario": "credit_debit_notes", "i": 0, "command": "@OpenCreditNote", "response": "@Response|OK|0|Nota de credito abierta"}
+{"scenario": "credit_debit_notes", "i": 1, "command": "@CustomerData|J-12345678-9|EMPRESA C.A.|Av Principal", "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA C.A."}
+{"scenario": "credit_debit_notes", "i": 2, "command": "@PrintLine|Devolucion|1|15.00|general", "response": "@Response|OK|0|Devolucion|1.000|15.00|15.00"}
+{"scenario": "credit_debit_notes", "i": 3, "command": "@Close", "response": "@Response|OK|0|Nota de Credito 1 cerrada|Total: 15.00|Impreso:1"}
+{"scenario": "credit_debit_notes", "i": 4, "command": "@OpenDebitNote", "response": "@Response|OK|0|Nota de debito abierta"}
+{"scenario": "credit_debit_notes", "i": 5, "command": "@PrintLine|Recargo|1|10.00|general", "response": "@Response|OK|0|Recargo|1.000|10.00|10.00"}
+{"scenario": "credit_debit_notes", "i": 6, "command": "@Close", "response": "@Response|OK|0|Nota de Debito 1 cerrada|Total: 10.00|Impreso:2"}
+{"scenario": "credit_debit_notes", "i": 7, "command": "S2", "response": "1|0|0|0.00|0.00|0.00|0"}
+{"scenario": "non_fiscal", "i": 0, "command": "@OpenNonFiscalDoc", "response": "@Response|OK|0|Documento no fiscal abierto"}
+{"scenario": "non_fiscal", "i": 1, "command": "@PrintNonFiscalText|Hola", "response": "@Response|OK|0|No fiscal: Hola"}
+{"scenario": "non_fiscal", "i": 2, "command": "@PrintFiscalText|Texto fiscal", "response": "@Response|OK|0|Texto: Texto fiscal"}
+{"scenario": "non_fiscal", "i": 3, "command": "@CloseNonFiscalDoc", "response": "@Response|OK|0|DNF cerrado"}
+{"scenario": "customer_variants", "i": 0, "command": "@CustomerData|J-1|NOMBRE|DIRECCION", "response": "@Response|OK|0|Cliente J-1 NOMBRE"}
+{"scenario": "customer_variants", "i": 1, "command": "@CustomerData|J-2|SOLO NOMBRE", "response": "@Response|OK|0|Cliente J-2 SOLO NOMBRE"}
+{"scenario": "customer_variants", "i": 2, "command": "@CustomerData|J-3", "response": "@Response|OK|0|Cliente J-3 SOLO NOMBRE"}
+{"scenario": "customer_variants", "i": 3, "command": "@SetCustomerData|J-4|CLASICO", "response": "@Response|OK|0|Cliente J-4 CLASICO"}
+{"scenario": "customer_variants", "i": 4, "command": "@SetCustomerTIN|J-555", "response": "@Response|OK|0|RIF registrado"}
+{"scenario": "customer_variants", "i": 5, "command": "@SetCustomerInfo1|NOMBRE 1", "response": "@Response|OK|0|Nombre registrado"}
+{"scenario": "customer_variants", "i": 6, "command": "@SetCustomerInfo2|NOMBRE 2", "response": "@Response|OK|0|Nombre linea 2 registrada"}
+{"scenario": "customer_variants", "i": 7, "command": "@SetCustomerExtraData|extra=1", "response": "@Response|OK|0|Datos extra registrados"}
+{"scenario": "customer_variants", "i": 8, "command": "@CustomerData|||", "response": "@Response|OK|0|Cliente"}
+{"scenario": "tax_specs", "i": 0, "command": "@OpenFiscalReceipt", "response": "@Response|OK|0|Documento fiscal abierto"}
+{"scenario": "tax_specs", "i": 1, "command": "@PrintLine|A|1|10|0", "response": "@Response|OK|0|A|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 2, "command": "@PrintLine|B|1|10|1", "response": "@Response|OK|0|B|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 3, "command": "@PrintLine|C|1|10|2", "response": "@Response|OK|0|C|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 4, "command": "@PrintLine|D|1|10|3", "response": "@Response|OK|0|D|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 5, "command": "@PrintLine|E|1|10|16", "response": "@Response|OK|0|E|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 6, "command": "@PrintLine|F|1|10|8", "response": "@Response|OK|0|F|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 7, "command": "@PrintLine|G|1|10|30", "response": "@Response|OK|0|G|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 8, "command": "@PrintLine|H|1|10|99", "response": "@Response|OK|0|H|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 9, "command": "@PrintLine|I|1|10|exento", "response": "@Response|OK|0|I|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 10, "command": "@PrintLine|J|1|10|reducida", "response": "@Response|OK|0|J|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 11, "command": "@PrintLine|K|1|10|", "response": "@Response|OK|0|K|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 12, "command": "@PrintLine|L|1|10", "response": "@Response|OK|0|L|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 13, "command": "@PrintLine|M|1|10|general|Q", "response": "@Response|OK|0|M|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 14, "command": "@PrintLineItem|N|1|10|general|M", "response": "@Response|OK|0|N|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 15, "command": "@RefundItem|R|1|10|general", "response": "@Response|OK|0|NC R|1.000|10.00|10.00"}
+{"scenario": "tax_specs", "i": 16, "command": "@Close", "response": "@Response|OK|0|Factura 1 cerrada|Total: 150.00|Impreso:1"}
+{"scenario": "payments_flow", "i": 0, "command": "@OpenFiscalReceipt", "response": "@Response|OK|0|Documento fiscal abierto"}
+{"scenario": "payments_flow", "i": 1, "command": "@PrintLine|Cafe|1|30.00|general", "response": "@Response|OK|0|Cafe|1.000|30.00|30.00"}
+{"scenario": "payments_flow", "i": 2, "command": "@Subtotal", "response": "@Response|OK|0|Subtotal: 25.86+IVA:4.14"}
+{"scenario": "payments_flow", "i": 3, "command": "@AddPayment|30.00|tarjeta", "response": "@Response|OK|0|Pago: 30.00|Pendiente: 0.00"}
+{"scenario": "payments_flow", "i": 4, "command": "@AddPayment|5.50|efectivo", "response": "@Response|OK|0|Pago: 5.50|Pendiente: -5.50"}
+{"scenario": "payments_flow", "i": 5, "command": "@TotalTender|Efectivo|0|T|0", "response": "@Response|OK|0|Pago: 0.00|Vuelto: 5.50|00000001"}
+{"scenario": "payments_flow", "i": 6, "command": "@LastItemCancel", "response": "@Response|OK|0|Ultimo item cancelado"}
+{"scenario": "payments_flow", "i": 7, "command": "@LastItemDiscount|5.00|X", "response": "@Response|OK|0|Descuento: 5.00"}
+{"scenario": "payments_flow", "i": 8, "command": "@Status", "response": "@Response|OK|0|Status: 0x05|Error: 0x00|Doc: ABIERTO|Ventas: 30.00"}
+{"scenario": "payments_flow", "i": 9, "command": "@Close", "response": "@Response|OK|0|Factura 1 cerrada|Total: 30.00|Impreso:1"}
+{"scenario": "payments_flow", "i": 10, "command": "@PrintXReport", "response": "@Response|OK|0|Reporte X #1|Ventas: 30.00|Impreso:2"}
+{"scenario": "payments_flow", "i": 11, "command": "@PrintZReport", "response": "@Response|OK|0|Reporte Z #1|Ventas: 30.00|Impreso:3"}
+{"scenario": "payments_flow", "i": 12, "command": "@DailyClose|Z", "response": "@Response|OK|0|Cierre Z #2|Impreso:4"}
+{"scenario": "payments_flow", "i": 13, "command": "@DailyCloseByDate", "response": "@Response|OK|0|Cierre por fecha #3|Impreso:5"}
+{"scenario": "payments_flow", "i": 14, "command": "@DailyCloseByNumber", "response": "@Response|OK|0|Cierre por numero #4|Impreso:6"}
+{"scenario": "payments_flow", "i": 15, "command": "@RefundClose|10.00|1", "response": "@Response|OK|0|Devolucion cerrada: 10.00"}
+{"scenario": "misc_ack", "i": 0, "command": "@OpenDrawer", "response": "@Response|OK|0|Gaveta 1 abierta"}
+{"scenario": "misc_ack", "i": 1, "command": "@OpenDrawer|2", "response": "@Response|OK|0|Gaveta 2 abierta"}
+{"scenario": "misc_ack", "i": 2, "command": "@BarCode|12345", "response": "@Response|OK|0|Codigo barras impreso"}
+{"scenario": "misc_ack", "i": 3, "command": "@Login|cajero", "response": "@Response|OK|0|Logon OK"}
+{"scenario": "misc_ack", "i": 4, "command": "@Logoff", "response": "@Response|OK|0|Logoff OK"}
+{"scenario": "misc_ack", "i": 5, "command": "@PrintTest", "response": "@Response|OK|0|Test impreso"}
+{"scenario": "misc_ack", "i": 6, "command": "@Reprint", "response": "@Response|OK|0|Reimpresion generada"}
+{"scenario": "misc_ack", "i": 7, "command": "@ReprintByDate|2024-01-01", "response": "@Response|OK|0|Reimpresion por fecha"}
+{"scenario": "misc_ack", "i": 8, "command": "@ReprintByNumber|1", "response": "@Response|OK|0|Reimpresion por numero"}
+{"scenario": "misc_ack", "i": 9, "command": "@SetDate|2024-01-01", "response": "@Response|OK|0|Fecha establecida"}
+{"scenario": "misc_ack", "i": 10, "command": "@SetTime|10:00:00", "response": "@Response|OK|0|Hora establecida"}
+{"scenario": "misc_ack", "i": 11, "command": "@StatusExtra", "response": "@Response|OK|0|Status extra OK"}
+{"scenario": "misc_ack", "i": 12, "command": "@ConfigureControllerByOne", "response": "@Response|OK|0|Configuracion OK"}
+{"scenario": "misc_ack", "i": 13, "command": "@PrintConfigurationData", "response": "@Response|OK|0|Configuracion impresa"}
+{"scenario": "misc_ack", "i": 14, "command": "@ProgramClerk|1", "response": "@Response|OK|0|Cajero programado"}
+{"scenario": "misc_ack", "i": 15, "command": "@ProgramPaymentMedia|cash", "response": "@Response|OK|0|Medio pago programado"}
+{"scenario": "misc_ack", "i": 16, "command": "@ProgramSymbol|Bs.", "response": "@Response|OK|0|Simbolo programado"}
+{"scenario": "misc_ack", "i": 17, "command": "@ProgramTaxes|16|8|30", "response": "@Response|OK|0|Tasas programadas"}
+{"scenario": "misc_ack", "i": 18, "command": "@SaveTaxes", "response": "@Response|OK|0|Tasas guardadas"}
+{"scenario": "misc_ack", "i": 19, "command": "@SendRawCommand|raw", "response": "@Response|OK|0|Raw enviado"}
+{"scenario": "misc_ack", "i": 20, "command": "@SetHeaderTrailer|H|T", "response": "@Response|OK|0|Header/trailer configurado"}
+{"scenario": "misc_ack", "i": 21, "command": "@DisplayCommercial|COMERCIAL", "response": "@Response|OK|0|Comercial mostrado"}
+{"scenario": "misc_ack", "i": 22, "command": "@DisplayDateTime", "response": "@Response|OK|0|Fecha/hora mostrada"}
+{"scenario": "misc_ack", "i": 23, "command": "@DisplayMessage|MSG", "response": "@Response|OK|0|Mensaje mostrado"}
+{"scenario": "misc_ack", "i": 24, "command": "@ProgramCommercial|COM", "response": "@Response|OK|0|Comercial programado"}
+{"scenario": "misc_ack", "i": 25, "command": "@ProgramMessage|MSG", "response": "@Response|OK|0|Mensaje programado"}
+{"scenario": "misc_ack", "i": 26, "command": "@FormatCheck|1", "response": "@Response|OK|0|Cheque formateado"}
+{"scenario": "misc_ack", "i": 27, "command": "@FormatEndorse|1", "response": "@Response|OK|0|Endoso formateado"}
+{"scenario": "misc_ack", "i": 28, "command": "@ModeSlip", "response": "@Response|OK|0|Modo slip"}
+{"scenario": "misc_ack", "i": 29, "command": "@ModeValidation", "response": "@Response|OK|0|Modo validacion"}
+{"scenario": "misc_ack", "i": 30, "command": "@PrintEndorse", "response": "@Response|OK|0|Endoso impreso"}
+{"scenario": "misc_ack", "i": 31, "command": "@PrintValidation", "response": "@Response|OK|0|Validacion impresa"}
+{"scenario": "misc_ack", "i": 32, "command": "@ReadMICR", "response": "@Response|OK|0|MICR leido"}
+{"scenario": "misc_ack", "i": 33, "command": "@PrintCashItem", "response": "@Response|OK|0|Movimiento caja"}
+{"scenario": "misc_ack", "i": 34, "command": "@PrintAuditStatusReport", "response": "@Response|OK|0|Reporte de auditoria impreso"}
+{"scenario": "misc_ack", "i": 35, "command": "@TrainingMode", "response": "@Response|OK|0|Modo entrenamiento"}
+{"scenario": "misc_ack", "i": 36, "command": "@ResetPrinterBuffer", "response": "@Response|OK|0|Buffer reseteado"}
+{"scenario": "misc_ack", "i": 37, "command": "@CloseFiscalReceipt", "response": "@Response|OK|0|Cerrado"}
+{"scenario": "misc_ack", "i": 38, "command": "@CloseCashReceipt", "response": "@Response|OK|0|DNF cerrado"}
+{"scenario": "misc_ack", "i": 39, "command": "@DailyClose", "response": "@Response|Error|2|Invalid params"}
+{"scenario": "misc_ack", "i": 40, "command": "@Cancel", "response": "@Response|OK|0|Cancelado"}
+{"scenario": "misc_ack", "i": 41, "command": "@AddPayment|10|cash", "response": "@Response|OK|0|Pago: 10.00|Pendiente: -10.00"}
+{"scenario": "misc_ack", "i": 42, "command": "@Subtotal", "response": "@Response|OK|0|Subtotal: 0.00+IVA:0.00"}
+{"scenario": "misc_ack", "i": 43, "command": "@Status", "response": "@Response|OK|0|Status: 0x04|Error: 0x00|Doc: CERRADO|Ventas: 0.00"}
+{"scenario": "errors_edge", "i": 0, "command": "@PrintLine|d|x|y", "response": "ERROR|0x50|could not convert string to float: 'x'"}
+{"scenario": "errors_edge", "i": 1, "command": "@PrintLine|d|1", "response": "@Response|Error|2|Invalid params"}
+{"scenario": "errors_edge", "i": 2, "command": "@PrintLine", "response": "@Response|Error|2|Invalid params"}
+{"scenario": "errors_edge", "i": 3, "command": "@AddPayment|abc|cash", "response": "ERROR|0x50|could not convert string to float: 'abc'"}
+{"scenario": "errors_edge", "i": 4, "command": "@AddPayment", "response": "@Response|Error|2|Invalid params"}
+{"scenario": "errors_edge", "i": 5, "command": "@Foo|bar", "response": "@Response|Error|0x50|Comando desconocido"}
+{"scenario": "errors_edge", "i": 6, "command": "@", "response": "@Response|Error|0x50|Comando desconocido"}
+{"scenario": "errors_edge", "i": 7, "command": "@RefundItem|d|1|10|general", "response": "@Response|OK|0|NC d|1.000|10.00|10.00"}
+{"scenario": "errors_edge", "i": 8, "command": "@TotalTender|solo", "response": "@Response|Error|2|Invalid params"}
+{"scenario": "errors_edge", "i": 9, "command": "@DirectPayment", "response": "@Response|Error|2|Invalid params"}
+{"scenario": "errors_edge", "i": 10, "command": "@DirectPayment|x", "response": "ERROR|0x50|invalid literal for int() with base 10: 'x'"}
+{"scenario": "errors_edge", "i": 11, "command": "@RefundClose|10", "response": "@Response|Error|2|Invalid params"}
+{"scenario": "errors_edge", "i": 12, "command": "@DailyCloseX", "response": "@Response|Error|0x50|Comando desconocido"}
+{"scenario": "errors_edge", "i": 13, "command": "@Status|extra", "response": "@Response|OK|0|Status: 0x05|Error: 0x00|Doc: ABIERTO|Ventas: 10.00"}
+{"scenario": "errors_edge", "i": 14, "command": "S1", "response": "0|MLBLN270001|J-55556666-3|0|0|0|0|0|0|10.00|<TS>"}
+{"scenario": "errors_edge", "i": 15, "command": "U0Z", "response": "0|Reporte Z #1|Ventas: 10.00|IVA: 1.38|Impreso:1"}
+{"scenario": "errors_edge", "i": 16, "command": "101", "response": "0|Factura 1|Total: 10.00|Impreso:2"}
+{"scenario": "errors_edge", "i": 17, "command": "3", "response": "0|Subtotal: 0.00 + 0.00 = 0.00"}
+{"scenario": "errors_edge", "i": 18, "command": "", "response": "ERROR|0x50|Comando desconocido"}

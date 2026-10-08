@@ -1,0 +1,46 @@
+      COMERCIAL LOS SIMULADORES C.A.      
+            RIF: J-12345678-9             
+             LOS SIMULADORES              
+  Avenida Principal de Los Chaguaramos,   
+    Edificio Fiscal, Piso 4, Oficina B    
+        CHACAO - CARACAS - MIRANDA        
+            Telf: 0212-9555123            
+ Rep. Legal: JUAN PEREZ RODRIGUEZ - C.I.  
+                V-12345678                
+ Actividad: VENTA DE EQUIPOS DE OFICINA Y 
+               SUMINISTROS                
+          CONTRIBUYENTE ESPECIAL          
+         AGENTE DE RETENCION IVA          
+==========================================
+              FACTURA FISCAL              
+               N° 00000042                
+           15/01/2026  10:30:00           
+==========================================
+CLIENTE:
+  CONSUMIDOR FINAL
+------------------------------------------
+   CANT DESCRIPCION          PREC  IVA   IMPORTE
+------------------------------------------
+  1.000 ITEM                10.00  G16     10.00
+------------------------------------------
+SUBTOTAL:                            10,00
+  BASE IVA 16%:                       8,62
+  IVA 16%:                            1,38
+==========================================
+TOTAL Bs.:                           10,00
+==========================================
+EFECTIVO:                            10,00
+------------------------------------------
+  SON: DIEZ CON 00/100
+------------------------------------------
+MAQUINA:                        MLTFHKA001
+RIF MAQ.:                     J-12345678-9
+COND. PAGO:                CONTADO 30 DIAS
+        ART. 63 Ley IVA - Ley Org.        
+     Simplificacion y Racionalizacion     
+          del Proceso Tributario          
+------------------------------------------
+          GRACIAS POR SU COMPRA           
+     * * * * * * * * * * * * * * * *      
+         DOCUMENTO FISCAL DIGITAL         
+       SIMULADOR - NO VALOR FISCAL        

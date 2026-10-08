@@ -1,0 +1,2557 @@
+{
+ "GET / (index)": {
+  "status": 200,
+  "sha256": "455dce8848eee332095f19c3078987670d278cbcc4d889d31ab6b4e2813a1169"
+ },
+ "tfhka raw|00|POST /api/command": {
+  "status": 200,
+  "body": {
+   "command": "S1",
+   "response": "0|MLTFHKA001|J-12345678-9|0|0|0|0|0|0|0.00|<TS>",
+   "seq": 1
+  }
+ },
+ "tfhka sale|00|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "iR*J-12345678-9",
+    "iS*EMPRESA DE PRUEBA C.A.",
+    "i01Av. Principal, Caracas"
+   ],
+   "responses": [
+    {
+     "command": "iR*J-12345678-9",
+     "response": "0|RIF registrado"
+    },
+    {
+     "command": "iS*EMPRESA DE PRUEBA C.A.",
+     "response": "0|Nombre registrado"
+    },
+    {
+     "command": "i01Av. Principal, Caracas",
+     "response": "0|Direccion registrada"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "tfhka sale|01|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "iR*J-12345678-9",
+    "iS*EMPRESA DE PRUEBA C.A.",
+    "i01Av. Principal, Caracas"
+   ],
+   "responses": [
+    {
+     "command": "iR*J-12345678-9",
+     "response": "0|RIF registrado"
+    },
+    {
+     "command": "iS*EMPRESA DE PRUEBA C.A.",
+     "response": "0|Nombre registrado"
+    },
+    {
+     "command": "i01Av. Principal, Caracas",
+     "response": "0|Direccion registrada"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "tfhka sale|02|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "!   2.000     15.00CAFE"
+   ],
+   "responses": [
+    {
+     "command": "!   2.000     15.00CAFE",
+     "response": "0|Item|CAFE|2.000|15.00|4.14|30.00"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "tfhka sale|03|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "\"   3.000      8.00PAN"
+   ],
+   "responses": [
+    {
+     "command": "\"   3.000      8.00PAN",
+     "response": "0|Item|PAN|3.000|8.00|1.78|24.00"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "tfhka sale|04|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "3"
+   ],
+   "responses": [
+    {
+     "command": "3",
+     "response": "0|Subtotal: 48.08 + 5.92 = 54.00"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "tfhka sale|05|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "10054.00"
+   ],
+   "responses": [
+    {
+     "command": "10054.00",
+     "response": "0|Pago: 54.00|Pendiente: 0.00"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "tfhka sale|06|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "101"
+   ],
+   "responses": [
+    {
+     "command": "101",
+     "response": "0|Factura 1|Total: 54.00|Impreso:1"
+    }
+   ],
+   "last_job_id": 1
+  }
+ },
+ "tfhka report|00|POST /api/report": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "U0X"
+   ],
+   "responses": [
+    {
+     "command": "U0X",
+     "response": "0|Reporte X #1|Ventas: 54.00|IVA: 5.92|Impreso:2"
+    }
+   ],
+   "last_job_id": 2
+  }
+ },
+ "tfhka report|01|POST /api/report": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "U0Z"
+   ],
+   "responses": [
+    {
+     "command": "U0Z",
+     "response": "0|Reporte Z #1|Ventas: 54.00|IVA: 5.92|Impreso:3"
+    }
+   ],
+   "last_job_id": 3
+  }
+ },
+ "tfhka company|00|POST /api/company": {
+  "status": 200,
+  "body": {
+   "company": {
+    "rif": "J-12345678-9",
+    "razon_social": "COMERCIAL LOS SIMULADORES C.A.",
+    "direccion": "Av. Principal, Edificio Fiscal, Piso 4",
+    "municipio": "CHACAO",
+    "ciudad": "CARACAS",
+    "estado": "MIRANDA",
+    "telefono": "0212-9555123",
+    "email": "",
+    "representante_legal": "JUAN PEREZ RODRIGUEZ",
+    "cedula_representante": "V-12345678",
+    "actividad_economica": "VENTA DE EQUIPOS DE OFICINA",
+    "nif": "",
+    "moneda": "Bs.",
+    "logo_text": "",
+    "condiciones_pago": "CONTADO 30 DIAS",
+    "contribuyente_especial": true,
+    "agente_retencion": true
+   },
+   "headers": [
+    "COMERCIAL LOS SIMULADORES C.A.",
+    "RIF: J-12345678-9",
+    "Av. Principal, Edificio Fiscal, Piso 4",
+    "CHACAO - MIRANDA",
+    "TEL: 0212-9555123",
+    "REP. LEGAL: JUAN PEREZ RODRIGUEZ",
+    "",
+    ""
+   ]
+  }
+ },
+ "tfhka get|00|GET /api/state?brand=tfhka": {
+  "status": 200,
+  "body": {
+   "brand": "TFHKA",
+   "model": "TFHKA",
+   "command_count": 14,
+   "status": {
+    "code": 4,
+    "hex": "0x04",
+    "name": "Modo fiscal - en espera"
+   },
+   "error": {
+    "code": 0,
+    "hex": "0x00",
+    "name": "Sin error"
+   },
+   "mode": "fiscal",
+   "memory_status": "ok",
+   "document": {
+    "open": false,
+    "type": null,
+    "items": 0,
+    "subtotal": 0.0,
+    "payable": 0.0,
+    "paid": 0.0,
+    "customer": {
+     "rif": "",
+     "name": "",
+     "address": ""
+    }
+   },
+   "counters": {
+    "invoices": 1,
+    "credit_notes": 0,
+    "debit_notes": 0,
+    "non_fiscal": 0,
+    "x_reports": 1,
+    "z_reports": 1,
+    "daily_closure": 1,
+    "fiscal_docs": 1
+   },
+   "daily": {
+    "invoices": 0,
+    "credit_notes": 0,
+    "debit_notes": 0,
+    "non_fiscal": 0,
+    "sales": 0.0,
+    "tax": 0.0
+   },
+   "totals": {
+    "lifetime_sales": 54.0,
+    "lifetime_tax": 5.92
+   },
+   "payments": {},
+   "tax_rates": {
+    "general": 16.0,
+    "reduced": 8.0,
+    "additional": 30.0
+   },
+   "serial_number": "MLTFHKA001",
+   "rif": "J-12345678-9",
+   "memory": {
+    "total_mb": 4.0,
+    "free_mb": 3.5,
+    "used_mb": 0.5,
+    "used_pct": 12.5
+   },
+   "print_job_seq": 3,
+   "headers": [
+    "COMERCIAL LOS SIMULADORES C.A.",
+    "RIF: J-12345678-9",
+    "Av. Principal, Edificio Fiscal, Piso 4",
+    "CHACAO - MIRANDA",
+    "TEL: 0212-9555123",
+    "REP. LEGAL: JUAN PEREZ RODRIGUEZ",
+    "",
+    ""
+   ],
+   "is_tfhka": true
+  }
+ },
+ "tfhka get|01|GET /api/history?brand=tfhka&since=0": {
+  "status": 200,
+  "body": {
+   "entries": [
+    {
+     "seq": 1,
+     "ts": "<TS>",
+     "command": "S1",
+     "response": "0|MLTFHKA001|J-12345678-9|0|0|0|0|0|0|0.00|<TS>",
+     "ok": true
+    },
+    {
+     "seq": 2,
+     "ts": "<TS>",
+     "command": "iR*J-12345678-9",
+     "response": "0|RIF registrado",
+     "ok": true
+    },
+    {
+     "seq": 3,
+     "ts": "<TS>",
+     "command": "iS*EMPRESA DE PRUEBA C.A.",
+     "response": "0|Nombre registrado",
+     "ok": true
+    },
+    {
+     "seq": 4,
+     "ts": "<TS>",
+     "command": "i01Av. Principal, Caracas",
+     "response": "0|Direccion registrada",
+     "ok": true
+    },
+    {
+     "seq": 5,
+     "ts": "<TS>",
+     "command": "iR*J-12345678-9",
+     "response": "0|RIF registrado",
+     "ok": true
+    },
+    {
+     "seq": 6,
+     "ts": "<TS>",
+     "command": "iS*EMPRESA DE PRUEBA C.A.",
+     "response": "0|Nombre registrado",
+     "ok": true
+    },
+    {
+     "seq": 7,
+     "ts": "<TS>",
+     "command": "i01Av. Principal, Caracas",
+     "response": "0|Direccion registrada",
+     "ok": true
+    },
+    {
+     "seq": 8,
+     "ts": "<TS>",
+     "command": "!   2.000     15.00CAFE",
+     "response": "0|Item|CAFE|2.000|15.00|4.14|30.00",
+     "ok": true
+    },
+    {
+     "seq": 9,
+     "ts": "<TS>",
+     "command": "\"   3.000      8.00PAN",
+     "response": "0|Item|PAN|3.000|8.00|1.78|24.00",
+     "ok": true
+    },
+    {
+     "seq": 10,
+     "ts": "<TS>",
+     "command": "3",
+     "response": "0|Subtotal: 48.08 + 5.92 = 54.00",
+     "ok": true
+    },
+    {
+     "seq": 11,
+     "ts": "<TS>",
+     "command": "10054.00",
+     "response": "0|Pago: 54.00|Pendiente: 0.00",
+     "ok": true
+    },
+    {
+     "seq": 12,
+     "ts": "<TS>",
+     "command": "101",
+     "response": "0|Factura 1|Total: 54.00|Impreso:1",
+     "ok": true
+    },
+    {
+     "seq": 13,
+     "ts": "<TS>",
+     "command": "U0X",
+     "response": "0|Reporte X #1|Ventas: 54.00|IVA: 5.92|Impreso:2",
+     "ok": true
+    },
+    {
+     "seq": 14,
+     "ts": "<TS>",
+     "command": "U0Z",
+     "response": "0|Reporte Z #1|Ventas: 54.00|IVA: 5.92|Impreso:3",
+     "ok": true
+    }
+   ],
+   "count": 14
+  }
+ },
+ "tfhka get|02|GET /api/preview?brand=tfhka": {
+  "status": 200,
+  "body": {
+   "open": false,
+   "lines": []
+  }
+ },
+ "tfhka get|03|GET /api/jobs?brand=tfhka": {
+  "status": 200,
+  "body": {
+   "jobs": [
+    {
+     "id": 3,
+     "kind": "z_report",
+     "title": "REPORTE Z N° 0001",
+     "ts": "<TS>",
+     "meta": {
+      "number": 1,
+      "total_sales": 54.0,
+      "total_tax": 5.92
+     }
+    },
+    {
+     "id": 2,
+     "kind": "x_report",
+     "title": "REPORTE X N° 0001",
+     "ts": "<TS>",
+     "meta": {
+      "number": 1,
+      "total_sales": 54.0,
+      "total_tax": 5.92
+     }
+    },
+    {
+     "id": 1,
+     "kind": "receipt",
+     "title": "FACTURA FISCAL N° 00000001",
+     "ts": "<TS>",
+     "meta": {
+      "number": 1,
+      "total": 54.0,
+      "doc_type": "invoice"
+     }
+    }
+   ]
+  }
+ },
+ "tfhka get|04|GET /api/job/1?brand=tfhka": {
+  "status": 200,
+  "body": {
+   "id": 1,
+   "kind": "receipt",
+   "title": "FACTURA FISCAL N° 00000001",
+   "ts": "<TS>",
+   "brand": "TFHKA",
+   "lines": [
+    "            EMPRESA SIN NOMBRE            ",
+    "==========================================",
+    "              FACTURA FISCAL              ",
+    "               N° 00000001                ",
+    "           <TS>           ",
+    "==========================================",
+    "CLIENTE:",
+    "  RIF/C.I: J-12345678-9",
+    "EMPRESA DE PRUEBA C.A.",
+    "Av. Principal, Caracas",
+    "------------------------------------------",
+    "   CANT DESCRIPCION          PREC  IVA   IMPORTE",
+    "------------------------------------------",
+    "  2.000 CAFE                15.00  G16     30.00",
+    "  3.000 PAN                  8.00   R8     24.00",
+    "------------------------------------------",
+    "SUBTOTAL:                            54,00",
+    "  BASE IVA 16%:                      25,86",
+    "  IVA 16%:                            4,14",
+    "  BASE IVA 8%:                       22,22",
+    "  IVA 8%:                             1,78",
+    "==========================================",
+    "TOTAL Bs.:                           54,00",
+    "==========================================",
+    "EFECTIVO:                            54,00",
+    "------------------------------------------",
+    "  SON: CINCUENTA Y CUATRO CON 00/100",
+    "------------------------------------------",
+    "MAQUINA:                        MLTFHKA001",
+    "RIF MAQ.:                     J-12345678-9",
+    "COND. PAGO:                        CONTADO",
+    "        ART. 63 Ley IVA - Ley Org.        ",
+    "     Simplificacion y Racionalizacion     ",
+    "          del Proceso Tributario          ",
+    "------------------------------------------",
+    "          GRACIAS POR SU COMPRA           ",
+    "     * * * * * * * * * * * * * * * *      ",
+    "         DOCUMENTO FISCAL DIGITAL         ",
+    "       SIMULADOR - NO VALOR FISCAL        "
+   ],
+   "meta": {
+    "number": 1,
+    "total": 54.0,
+    "doc_type": "invoice"
+   }
+  }
+ },
+ "tfhka get|05|GET /api/company?brand=tfhka": {
+  "status": 200,
+  "body": {
+   "company": {
+    "rif": "J-12345678-9",
+    "razon_social": "COMERCIAL LOS SIMULADORES C.A.",
+    "direccion": "Av. Principal, Edificio Fiscal, Piso 4",
+    "municipio": "CHACAO",
+    "ciudad": "CARACAS",
+    "estado": "MIRANDA",
+    "telefono": "0212-9555123",
+    "email": "",
+    "representante_legal": "JUAN PEREZ RODRIGUEZ",
+    "cedula_representante": "V-12345678",
+    "actividad_economica": "VENTA DE EQUIPOS DE OFICINA",
+    "nif": "",
+    "moneda": "Bs.",
+    "logo_text": "",
+    "condiciones_pago": "CONTADO 30 DIAS",
+    "contribuyente_especial": true,
+    "agente_retencion": true
+   },
+   "headers": [
+    "COMERCIAL LOS SIMULADORES C.A.",
+    "RIF: J-12345678-9",
+    "Av. Principal, Edificio Fiscal, Piso 4",
+    "CHACAO - MIRANDA",
+    "TEL: 0212-9555123",
+    "REP. LEGAL: JUAN PEREZ RODRIGUEZ",
+    "",
+    ""
+   ]
+  }
+ },
+ "tfhka hist2|00|GET /api/history?brand=tfhka&since=1": {
+  "status": 200,
+  "body": {
+   "entries": [
+    {
+     "seq": 2,
+     "ts": "<TS>",
+     "command": "iR*J-12345678-9",
+     "response": "0|RIF registrado",
+     "ok": true
+    },
+    {
+     "seq": 3,
+     "ts": "<TS>",
+     "command": "iS*EMPRESA DE PRUEBA C.A.",
+     "response": "0|Nombre registrado",
+     "ok": true
+    },
+    {
+     "seq": 4,
+     "ts": "<TS>",
+     "command": "i01Av. Principal, Caracas",
+     "response": "0|Direccion registrada",
+     "ok": true
+    },
+    {
+     "seq": 5,
+     "ts": "<TS>",
+     "command": "iR*J-12345678-9",
+     "response": "0|RIF registrado",
+     "ok": true
+    },
+    {
+     "seq": 6,
+     "ts": "<TS>",
+     "command": "iS*EMPRESA DE PRUEBA C.A.",
+     "response": "0|Nombre registrado",
+     "ok": true
+    },
+    {
+     "seq": 7,
+     "ts": "<TS>",
+     "command": "i01Av. Principal, Caracas",
+     "response": "0|Direccion registrada",
+     "ok": true
+    },
+    {
+     "seq": 8,
+     "ts": "<TS>",
+     "command": "!   2.000     15.00CAFE",
+     "response": "0|Item|CAFE|2.000|15.00|4.14|30.00",
+     "ok": true
+    },
+    {
+     "seq": 9,
+     "ts": "<TS>",
+     "command": "\"   3.000      8.00PAN",
+     "response": "0|Item|PAN|3.000|8.00|1.78|24.00",
+     "ok": true
+    },
+    {
+     "seq": 10,
+     "ts": "<TS>",
+     "command": "3",
+     "response": "0|Subtotal: 48.08 + 5.92 = 54.00",
+     "ok": true
+    },
+    {
+     "seq": 11,
+     "ts": "<TS>",
+     "command": "10054.00",
+     "response": "0|Pago: 54.00|Pendiente: 0.00",
+     "ok": true
+    },
+    {
+     "seq": 12,
+     "ts": "<TS>",
+     "command": "101",
+     "response": "0|Factura 1|Total: 54.00|Impreso:1",
+     "ok": true
+    },
+    {
+     "seq": 13,
+     "ts": "<TS>",
+     "command": "U0X",
+     "response": "0|Reporte X #1|Ventas: 54.00|IVA: 5.92|Impreso:2",
+     "ok": true
+    },
+    {
+     "seq": 14,
+     "ts": "<TS>",
+     "command": "U0Z",
+     "response": "0|Reporte Z #1|Ventas: 54.00|IVA: 5.92|Impreso:3",
+     "ok": true
+    }
+   ],
+   "count": 14
+  }
+ },
+ "tfhka hist2|01|GET /api/history?brand=tfhka&since=99999": {
+  "status": 200,
+  "body": {
+   "entries": [],
+   "count": 14
+  }
+ },
+ "hasar raw|00|POST /api/command": {
+  "status": 200,
+  "body": {
+   "command": "@Status",
+   "response": "@Response|OK|0|Status: 0x04|Error: 0x00|Doc: CERRADO|Ventas: 0.00",
+   "seq": 1
+  }
+ },
+ "hasar sale|00|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@OpenFiscalReceipt",
+    "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas"
+   ],
+   "responses": [
+    {
+     "command": "@OpenFiscalReceipt",
+     "response": "@Response|OK|0|Documento fiscal abierto"
+    },
+    {
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A."
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "hasar sale|01|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas"
+   ],
+   "responses": [
+    {
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A."
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "hasar sale|02|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@PrintLine|CAFE|2.0|15.0|general"
+   ],
+   "responses": [
+    {
+     "command": "@PrintLine|CAFE|2.0|15.0|general",
+     "response": "@Response|OK|0|CAFE|2.000|15.00|30.00"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "hasar sale|03|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@PrintLine|PAN|3.0|8.0|reduced"
+   ],
+   "responses": [
+    {
+     "command": "@PrintLine|PAN|3.0|8.0|reduced",
+     "response": "@Response|OK|0|PAN|3.000|8.00|24.00"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "hasar sale|04|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@Subtotal"
+   ],
+   "responses": [
+    {
+     "command": "@Subtotal",
+     "response": "@Response|OK|0|Subtotal: 48.08+IVA:5.92"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "hasar sale|05|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@AddPayment|54.00|cash"
+   ],
+   "responses": [
+    {
+     "command": "@AddPayment|54.00|cash",
+     "response": "@Response|OK|0|Pago: 54.00|Pendiente: 0.00"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "hasar sale|06|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@Close"
+   ],
+   "responses": [
+    {
+     "command": "@Close",
+     "response": "@Response|OK|0|Factura 1 cerrada|Total: 54.00|Impreso:1"
+    }
+   ],
+   "last_job_id": 1
+  }
+ },
+ "hasar report|00|POST /api/report": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@PrintXReport"
+   ],
+   "responses": [
+    {
+     "command": "@PrintXReport",
+     "response": "@Response|OK|0|Reporte X #1|Ventas: 54.00|Impreso:2"
+    }
+   ],
+   "last_job_id": 2
+  }
+ },
+ "hasar report|01|POST /api/report": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@PrintZReport"
+   ],
+   "responses": [
+    {
+     "command": "@PrintZReport",
+     "response": "@Response|OK|0|Reporte Z #1|Ventas: 54.00|Impreso:3"
+    }
+   ],
+   "last_job_id": 3
+  }
+ },
+ "hasar company|00|POST /api/company": {
+  "status": 200,
+  "body": {
+   "company": {
+    "rif": "J-12345678-9",
+    "razon_social": "COMERCIAL LOS SIMULADORES C.A.",
+    "direccion": "Av. Principal, Edificio Fiscal, Piso 4",
+    "municipio": "CHACAO",
+    "ciudad": "CARACAS",
+    "estado": "MIRANDA",
+    "telefono": "0212-9555123",
+    "email": "",
+    "representante_legal": "JUAN PEREZ RODRIGUEZ",
+    "cedula_representante": "V-12345678",
+    "actividad_economica": "VENTA DE EQUIPOS DE OFICINA",
+    "nif": "",
+    "moneda": "Bs.",
+    "logo_text": "",
+    "condiciones_pago": "CONTADO 30 DIAS",
+    "contribuyente_especial": true,
+    "agente_retencion": true
+   },
+   "headers": [
+    "COMERCIAL LOS SIMULADORES C.A.",
+    "RIF: J-12345678-9",
+    "Av. Principal, Edificio Fiscal, Piso 4",
+    "CHACAO - MIRANDA",
+    "TEL: 0212-9555123",
+    "REP. LEGAL: JUAN PEREZ RODRIGUEZ",
+    "",
+    ""
+   ]
+  }
+ },
+ "hasar get|00|GET /api/state?brand=hasar": {
+  "status": 200,
+  "body": {
+   "brand": "HASAR",
+   "model": "SMH/P-615F",
+   "command_count": 11,
+   "status": {
+    "code": 4,
+    "hex": "0x04",
+    "name": "Modo fiscal - en espera"
+   },
+   "error": {
+    "code": 0,
+    "hex": "0x00",
+    "name": "Sin error"
+   },
+   "mode": "fiscal",
+   "memory_status": "ok",
+   "document": {
+    "open": false,
+    "type": null,
+    "items": 0,
+    "subtotal": 0.0,
+    "payable": 0.0,
+    "paid": 0.0,
+    "customer": {
+     "rif": "",
+     "name": "",
+     "address": ""
+    }
+   },
+   "counters": {
+    "invoices": 1,
+    "credit_notes": 0,
+    "debit_notes": 0,
+    "non_fiscal": 0,
+    "x_reports": 1,
+    "z_reports": 1,
+    "daily_closure": 1,
+    "fiscal_docs": 1
+   },
+   "daily": {
+    "invoices": 0,
+    "credit_notes": 0,
+    "debit_notes": 0,
+    "non_fiscal": 0,
+    "sales": 0.0,
+    "tax": 0.0
+   },
+   "totals": {
+    "lifetime_sales": 54.0,
+    "lifetime_tax": 5.92
+   },
+   "payments": {},
+   "tax_rates": {
+    "general": 16.0,
+    "reduced": 8.0,
+    "additional": 30.0
+   },
+   "serial_number": "MLHSR615F001",
+   "rif": "J-12345678-9",
+   "memory": {
+    "total_mb": 4.0,
+    "free_mb": 3.5,
+    "used_mb": 0.5,
+    "used_pct": 12.5
+   },
+   "print_job_seq": 3,
+   "headers": [
+    "COMERCIAL LOS SIMULADORES C.A.",
+    "RIF: J-12345678-9",
+    "Av. Principal, Edificio Fiscal, Piso 4",
+    "CHACAO - MIRANDA",
+    "TEL: 0212-9555123",
+    "REP. LEGAL: JUAN PEREZ RODRIGUEZ",
+    "",
+    ""
+   ],
+   "is_tfhka": false
+  }
+ },
+ "hasar get|01|GET /api/history?brand=hasar&since=0": {
+  "status": 200,
+  "body": {
+   "entries": [
+    {
+     "seq": 1,
+     "ts": "<TS>",
+     "command": "@Status",
+     "response": "@Response|OK|0|Status: 0x04|Error: 0x00|Doc: CERRADO|Ventas: 0.00",
+     "ok": false
+    },
+    {
+     "seq": 2,
+     "ts": "<TS>",
+     "command": "@OpenFiscalReceipt",
+     "response": "@Response|OK|0|Documento fiscal abierto",
+     "ok": true
+    },
+    {
+     "seq": 3,
+     "ts": "<TS>",
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A.",
+     "ok": true
+    },
+    {
+     "seq": 4,
+     "ts": "<TS>",
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A.",
+     "ok": true
+    },
+    {
+     "seq": 5,
+     "ts": "<TS>",
+     "command": "@PrintLine|CAFE|2.0|15.0|general",
+     "response": "@Response|OK|0|CAFE|2.000|15.00|30.00",
+     "ok": true
+    },
+    {
+     "seq": 6,
+     "ts": "<TS>",
+     "command": "@PrintLine|PAN|3.0|8.0|reduced",
+     "response": "@Response|OK|0|PAN|3.000|8.00|24.00",
+     "ok": true
+    },
+    {
+     "seq": 7,
+     "ts": "<TS>",
+     "command": "@Subtotal",
+     "response": "@Response|OK|0|Subtotal: 48.08+IVA:5.92",
+     "ok": true
+    },
+    {
+     "seq": 8,
+     "ts": "<TS>",
+     "command": "@AddPayment|54.00|cash",
+     "response": "@Response|OK|0|Pago: 54.00|Pendiente: 0.00",
+     "ok": true
+    },
+    {
+     "seq": 9,
+     "ts": "<TS>",
+     "command": "@Close",
+     "response": "@Response|OK|0|Factura 1 cerrada|Total: 54.00|Impreso:1",
+     "ok": true
+    },
+    {
+     "seq": 10,
+     "ts": "<TS>",
+     "command": "@PrintXReport",
+     "response": "@Response|OK|0|Reporte X #1|Ventas: 54.00|Impreso:2",
+     "ok": true
+    },
+    {
+     "seq": 11,
+     "ts": "<TS>",
+     "command": "@PrintZReport",
+     "response": "@Response|OK|0|Reporte Z #1|Ventas: 54.00|Impreso:3",
+     "ok": true
+    }
+   ],
+   "count": 11
+  }
+ },
+ "hasar get|02|GET /api/preview?brand=hasar": {
+  "status": 200,
+  "body": {
+   "open": false,
+   "lines": []
+  }
+ },
+ "hasar get|03|GET /api/jobs?brand=hasar": {
+  "status": 200,
+  "body": {
+   "jobs": [
+    {
+     "id": 3,
+     "kind": "z_report",
+     "title": "REPORTE Z N° 0001",
+     "ts": "<TS>",
+     "meta": {
+      "number": 1,
+      "total_sales": 54.0,
+      "total_tax": 5.92
+     }
+    },
+    {
+     "id": 2,
+     "kind": "x_report",
+     "title": "REPORTE X N° 0001",
+     "ts": "<TS>",
+     "meta": {
+      "number": 1,
+      "total_sales": 54.0,
+      "total_tax": 5.92
+     }
+    },
+    {
+     "id": 1,
+     "kind": "receipt",
+     "title": "FACTURA FISCAL N° 00000001",
+     "ts": "<TS>",
+     "meta": {
+      "number": 1,
+      "total": 54.0,
+      "doc_type": "invoice"
+     }
+    }
+   ]
+  }
+ },
+ "hasar get|04|GET /api/job/1?brand=hasar": {
+  "status": 200,
+  "body": {
+   "id": 1,
+   "kind": "receipt",
+   "title": "FACTURA FISCAL N° 00000001",
+   "ts": "<TS>",
+   "brand": "HASAR",
+   "lines": [
+    "            EMPRESA SIN NOMBRE            ",
+    "==========================================",
+    "              FACTURA FISCAL              ",
+    "               N° 00000001                ",
+    "           <TS>           ",
+    "==========================================",
+    "CLIENTE:",
+    "  RIF/C.I: J-12345678-9",
+    "EMPRESA DE PRUEBA C.A.",
+    "Av. Principal, Caracas",
+    "------------------------------------------",
+    "   CANT DESCRIPCION          PREC  IVA   IMPORTE",
+    "------------------------------------------",
+    "  2.000 CAFE                15.00  G16     30.00",
+    "  3.000 PAN                  8.00   R8     24.00",
+    "------------------------------------------",
+    "SUBTOTAL:                            54,00",
+    "  BASE IVA 16%:                      25,86",
+    "  IVA 16%:                            4,14",
+    "  BASE IVA 8%:                       22,22",
+    "  IVA 8%:                             1,78",
+    "==========================================",
+    "TOTAL Bs.:                           54,00",
+    "==========================================",
+    "EFECTIVO:                            54,00",
+    "------------------------------------------",
+    "  SON: CINCUENTA Y CUATRO CON 00/100",
+    "------------------------------------------",
+    "MAQUINA:                      MLHSR615F001",
+    "RIF MAQ.:                     J-98765432-1",
+    "COND. PAGO:                        CONTADO",
+    "        ART. 63 Ley IVA - Ley Org.        ",
+    "     Simplificacion y Racionalizacion     ",
+    "          del Proceso Tributario          ",
+    "------------------------------------------",
+    "          GRACIAS POR SU COMPRA           ",
+    "     * * * * * * * * * * * * * * * *      ",
+    "         DOCUMENTO FISCAL DIGITAL         ",
+    "       SIMULADOR - NO VALOR FISCAL        "
+   ],
+   "meta": {
+    "number": 1,
+    "total": 54.0,
+    "doc_type": "invoice"
+   }
+  }
+ },
+ "hasar get|05|GET /api/company?brand=hasar": {
+  "status": 200,
+  "body": {
+   "company": {
+    "rif": "J-12345678-9",
+    "razon_social": "COMERCIAL LOS SIMULADORES C.A.",
+    "direccion": "Av. Principal, Edificio Fiscal, Piso 4",
+    "municipio": "CHACAO",
+    "ciudad": "CARACAS",
+    "estado": "MIRANDA",
+    "telefono": "0212-9555123",
+    "email": "",
+    "representante_legal": "JUAN PEREZ RODRIGUEZ",
+    "cedula_representante": "V-12345678",
+    "actividad_economica": "VENTA DE EQUIPOS DE OFICINA",
+    "nif": "",
+    "moneda": "Bs.",
+    "logo_text": "",
+    "condiciones_pago": "CONTADO 30 DIAS",
+    "contribuyente_especial": true,
+    "agente_retencion": true
+   },
+   "headers": [
+    "COMERCIAL LOS SIMULADORES C.A.",
+    "RIF: J-12345678-9",
+    "Av. Principal, Edificio Fiscal, Piso 4",
+    "CHACAO - MIRANDA",
+    "TEL: 0212-9555123",
+    "REP. LEGAL: JUAN PEREZ RODRIGUEZ",
+    "",
+    ""
+   ]
+  }
+ },
+ "hasar hist2|00|GET /api/history?brand=hasar&since=1": {
+  "status": 200,
+  "body": {
+   "entries": [
+    {
+     "seq": 2,
+     "ts": "<TS>",
+     "command": "@OpenFiscalReceipt",
+     "response": "@Response|OK|0|Documento fiscal abierto",
+     "ok": true
+    },
+    {
+     "seq": 3,
+     "ts": "<TS>",
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A.",
+     "ok": true
+    },
+    {
+     "seq": 4,
+     "ts": "<TS>",
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A.",
+     "ok": true
+    },
+    {
+     "seq": 5,
+     "ts": "<TS>",
+     "command": "@PrintLine|CAFE|2.0|15.0|general",
+     "response": "@Response|OK|0|CAFE|2.000|15.00|30.00",
+     "ok": true
+    },
+    {
+     "seq": 6,
+     "ts": "<TS>",
+     "command": "@PrintLine|PAN|3.0|8.0|reduced",
+     "response": "@Response|OK|0|PAN|3.000|8.00|24.00",
+     "ok": true
+    },
+    {
+     "seq": 7,
+     "ts": "<TS>",
+     "command": "@Subtotal",
+     "response": "@Response|OK|0|Subtotal: 48.08+IVA:5.92",
+     "ok": true
+    },
+    {
+     "seq": 8,
+     "ts": "<TS>",
+     "command": "@AddPayment|54.00|cash",
+     "response": "@Response|OK|0|Pago: 54.00|Pendiente: 0.00",
+     "ok": true
+    },
+    {
+     "seq": 9,
+     "ts": "<TS>",
+     "command": "@Close",
+     "response": "@Response|OK|0|Factura 1 cerrada|Total: 54.00|Impreso:1",
+     "ok": true
+    },
+    {
+     "seq": 10,
+     "ts": "<TS>",
+     "command": "@PrintXReport",
+     "response": "@Response|OK|0|Reporte X #1|Ventas: 54.00|Impreso:2",
+     "ok": true
+    },
+    {
+     "seq": 11,
+     "ts": "<TS>",
+     "command": "@PrintZReport",
+     "response": "@Response|OK|0|Reporte Z #1|Ventas: 54.00|Impreso:3",
+     "ok": true
+    }
+   ],
+   "count": 11
+  }
+ },
+ "hasar hist2|01|GET /api/history?brand=hasar&since=99999": {
+  "status": 200,
+  "body": {
+   "entries": [],
+   "count": 11
+  }
+ },
+ "bixolon raw|00|POST /api/command": {
+  "status": 200,
+  "body": {
+   "command": "@Status",
+   "response": "@Response|OK|0|Status: 0x04|Error: 0x00|Doc: CERRADO|Ventas: 0.00",
+   "seq": 1
+  }
+ },
+ "bixolon sale|00|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@OpenFiscalReceipt",
+    "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas"
+   ],
+   "responses": [
+    {
+     "command": "@OpenFiscalReceipt",
+     "response": "@Response|OK|0|Documento fiscal abierto"
+    },
+    {
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A."
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "bixolon sale|01|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas"
+   ],
+   "responses": [
+    {
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A."
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "bixolon sale|02|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@PrintLine|CAFE|2.0|15.0|general"
+   ],
+   "responses": [
+    {
+     "command": "@PrintLine|CAFE|2.0|15.0|general",
+     "response": "@Response|OK|0|CAFE|2.000|15.00|30.00"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "bixolon sale|03|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@PrintLine|PAN|3.0|8.0|reduced"
+   ],
+   "responses": [
+    {
+     "command": "@PrintLine|PAN|3.0|8.0|reduced",
+     "response": "@Response|OK|0|PAN|3.000|8.00|24.00"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "bixolon sale|04|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@Subtotal"
+   ],
+   "responses": [
+    {
+     "command": "@Subtotal",
+     "response": "@Response|OK|0|Subtotal: 48.08+IVA:5.92"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "bixolon sale|05|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@AddPayment|54.00|cash"
+   ],
+   "responses": [
+    {
+     "command": "@AddPayment|54.00|cash",
+     "response": "@Response|OK|0|Pago: 54.00|Pendiente: 0.00"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "bixolon sale|06|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@Close"
+   ],
+   "responses": [
+    {
+     "command": "@Close",
+     "response": "@Response|OK|0|Factura 1 cerrada|Total: 54.00|Impreso:1"
+    }
+   ],
+   "last_job_id": 1
+  }
+ },
+ "bixolon report|00|POST /api/report": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@PrintXReport"
+   ],
+   "responses": [
+    {
+     "command": "@PrintXReport",
+     "response": "@Response|OK|0|Reporte X #1|Ventas: 54.00|Impreso:2"
+    }
+   ],
+   "last_job_id": 2
+  }
+ },
+ "bixolon report|01|POST /api/report": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@PrintZReport"
+   ],
+   "responses": [
+    {
+     "command": "@PrintZReport",
+     "response": "@Response|OK|0|Reporte Z #1|Ventas: 54.00|Impreso:3"
+    }
+   ],
+   "last_job_id": 3
+  }
+ },
+ "bixolon company|00|POST /api/company": {
+  "status": 200,
+  "body": {
+   "company": {
+    "rif": "J-12345678-9",
+    "razon_social": "COMERCIAL LOS SIMULADORES C.A.",
+    "direccion": "Av. Principal, Edificio Fiscal, Piso 4",
+    "municipio": "CHACAO",
+    "ciudad": "CARACAS",
+    "estado": "MIRANDA",
+    "telefono": "0212-9555123",
+    "email": "",
+    "representante_legal": "JUAN PEREZ RODRIGUEZ",
+    "cedula_representante": "V-12345678",
+    "actividad_economica": "VENTA DE EQUIPOS DE OFICINA",
+    "nif": "",
+    "moneda": "Bs.",
+    "logo_text": "",
+    "condiciones_pago": "CONTADO 30 DIAS",
+    "contribuyente_especial": true,
+    "agente_retencion": true
+   },
+   "headers": [
+    "COMERCIAL LOS SIMULADORES C.A.",
+    "RIF: J-12345678-9",
+    "Av. Principal, Edificio Fiscal, Piso 4",
+    "CHACAO - MIRANDA",
+    "TEL: 0212-9555123",
+    "REP. LEGAL: JUAN PEREZ RODRIGUEZ",
+    "",
+    ""
+   ]
+  }
+ },
+ "bixolon get|00|GET /api/state?brand=bixolon": {
+  "status": 200,
+  "body": {
+   "brand": "BIXOLON",
+   "model": "SRP-270",
+   "command_count": 11,
+   "status": {
+    "code": 4,
+    "hex": "0x04",
+    "name": "Modo fiscal - en espera"
+   },
+   "error": {
+    "code": 0,
+    "hex": "0x00",
+    "name": "Sin error"
+   },
+   "mode": "fiscal",
+   "memory_status": "ok",
+   "document": {
+    "open": false,
+    "type": null,
+    "items": 0,
+    "subtotal": 0.0,
+    "payable": 0.0,
+    "paid": 0.0,
+    "customer": {
+     "rif": "",
+     "name": "",
+     "address": ""
+    }
+   },
+   "counters": {
+    "invoices": 1,
+    "credit_notes": 0,
+    "debit_notes": 0,
+    "non_fiscal": 0,
+    "x_reports": 1,
+    "z_reports": 1,
+    "daily_closure": 1,
+    "fiscal_docs": 1
+   },
+   "daily": {
+    "invoices": 0,
+    "credit_notes": 0,
+    "debit_notes": 0,
+    "non_fiscal": 0,
+    "sales": 0.0,
+    "tax": 0.0
+   },
+   "totals": {
+    "lifetime_sales": 54.0,
+    "lifetime_tax": 5.92
+   },
+   "payments": {},
+   "tax_rates": {
+    "general": 16.0,
+    "reduced": 8.0,
+    "additional": 30.0
+   },
+   "serial_number": "MLBLN270001",
+   "rif": "J-12345678-9",
+   "memory": {
+    "total_mb": 2.0,
+    "free_mb": 1.5,
+    "used_mb": 0.5,
+    "used_pct": 25.1
+   },
+   "print_job_seq": 3,
+   "headers": [
+    "COMERCIAL LOS SIMULADORES C.A.",
+    "RIF: J-12345678-9",
+    "Av. Principal, Edificio Fiscal, Piso 4",
+    "CHACAO - MIRANDA",
+    "TEL: 0212-9555123",
+    "REP. LEGAL: JUAN PEREZ RODRIGUEZ",
+    "",
+    ""
+   ],
+   "is_tfhka": false
+  }
+ },
+ "bixolon get|01|GET /api/history?brand=bixolon&since=0": {
+  "status": 200,
+  "body": {
+   "entries": [
+    {
+     "seq": 1,
+     "ts": "<TS>",
+     "command": "@Status",
+     "response": "@Response|OK|0|Status: 0x04|Error: 0x00|Doc: CERRADO|Ventas: 0.00",
+     "ok": false
+    },
+    {
+     "seq": 2,
+     "ts": "<TS>",
+     "command": "@OpenFiscalReceipt",
+     "response": "@Response|OK|0|Documento fiscal abierto",
+     "ok": true
+    },
+    {
+     "seq": 3,
+     "ts": "<TS>",
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A.",
+     "ok": true
+    },
+    {
+     "seq": 4,
+     "ts": "<TS>",
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A.",
+     "ok": true
+    },
+    {
+     "seq": 5,
+     "ts": "<TS>",
+     "command": "@PrintLine|CAFE|2.0|15.0|general",
+     "response": "@Response|OK|0|CAFE|2.000|15.00|30.00",
+     "ok": true
+    },
+    {
+     "seq": 6,
+     "ts": "<TS>",
+     "command": "@PrintLine|PAN|3.0|8.0|reduced",
+     "response": "@Response|OK|0|PAN|3.000|8.00|24.00",
+     "ok": true
+    },
+    {
+     "seq": 7,
+     "ts": "<TS>",
+     "command": "@Subtotal",
+     "response": "@Response|OK|0|Subtotal: 48.08+IVA:5.92",
+     "ok": true
+    },
+    {
+     "seq": 8,
+     "ts": "<TS>",
+     "command": "@AddPayment|54.00|cash",
+     "response": "@Response|OK|0|Pago: 54.00|Pendiente: 0.00",
+     "ok": true
+    },
+    {
+     "seq": 9,
+     "ts": "<TS>",
+     "command": "@Close",
+     "response": "@Response|OK|0|Factura 1 cerrada|Total: 54.00|Impreso:1",
+     "ok": true
+    },
+    {
+     "seq": 10,
+     "ts": "<TS>",
+     "command": "@PrintXReport",
+     "response": "@Response|OK|0|Reporte X #1|Ventas: 54.00|Impreso:2",
+     "ok": true
+    },
+    {
+     "seq": 11,
+     "ts": "<TS>",
+     "command": "@PrintZReport",
+     "response": "@Response|OK|0|Reporte Z #1|Ventas: 54.00|Impreso:3",
+     "ok": true
+    }
+   ],
+   "count": 11
+  }
+ },
+ "bixolon get|02|GET /api/preview?brand=bixolon": {
+  "status": 200,
+  "body": {
+   "open": false,
+   "lines": []
+  }
+ },
+ "bixolon get|03|GET /api/jobs?brand=bixolon": {
+  "status": 200,
+  "body": {
+   "jobs": [
+    {
+     "id": 3,
+     "kind": "z_report",
+     "title": "REPORTE Z N° 0001",
+     "ts": "<TS>",
+     "meta": {
+      "number": 1,
+      "total_sales": 54.0,
+      "total_tax": 5.92
+     }
+    },
+    {
+     "id": 2,
+     "kind": "x_report",
+     "title": "REPORTE X N° 0001",
+     "ts": "<TS>",
+     "meta": {
+      "number": 1,
+      "total_sales": 54.0,
+      "total_tax": 5.92
+     }
+    },
+    {
+     "id": 1,
+     "kind": "receipt",
+     "title": "FACTURA FISCAL N° 00000001",
+     "ts": "<TS>",
+     "meta": {
+      "number": 1,
+      "total": 54.0,
+      "doc_type": "invoice"
+     }
+    }
+   ]
+  }
+ },
+ "bixolon get|04|GET /api/job/1?brand=bixolon": {
+  "status": 200,
+  "body": {
+   "id": 1,
+   "kind": "receipt",
+   "title": "FACTURA FISCAL N° 00000001",
+   "ts": "<TS>",
+   "brand": "BIXOLON",
+   "lines": [
+    "            EMPRESA SIN NOMBRE            ",
+    "==========================================",
+    "              FACTURA FISCAL              ",
+    "               N° 00000001                ",
+    "           <TS>           ",
+    "==========================================",
+    "CLIENTE:",
+    "  RIF/C.I: J-12345678-9",
+    "EMPRESA DE PRUEBA C.A.",
+    "Av. Principal, Caracas",
+    "------------------------------------------",
+    "   CANT DESCRIPCION          PREC  IVA   IMPORTE",
+    "------------------------------------------",
+    "  2.000 CAFE                15.00  G16     30.00",
+    "  3.000 PAN                  8.00   R8     24.00",
+    "------------------------------------------",
+    "SUBTOTAL:                            54,00",
+    "  BASE IVA 16%:                      25,86",
+    "  IVA 16%:                            4,14",
+    "  BASE IVA 8%:                       22,22",
+    "  IVA 8%:                             1,78",
+    "==========================================",
+    "TOTAL Bs.:                           54,00",
+    "==========================================",
+    "EFECTIVO:                            54,00",
+    "------------------------------------------",
+    "  SON: CINCUENTA Y CUATRO CON 00/100",
+    "------------------------------------------",
+    "MAQUINA:                       MLBLN270001",
+    "RIF MAQ.:                     J-55556666-3",
+    "COND. PAGO:                        CONTADO",
+    "        ART. 63 Ley IVA - Ley Org.        ",
+    "     Simplificacion y Racionalizacion     ",
+    "          del Proceso Tributario          ",
+    "------------------------------------------",
+    "          GRACIAS POR SU COMPRA           ",
+    "     * * * * * * * * * * * * * * * *      ",
+    "         DOCUMENTO FISCAL DIGITAL         ",
+    "       SIMULADOR - NO VALOR FISCAL        "
+   ],
+   "meta": {
+    "number": 1,
+    "total": 54.0,
+    "doc_type": "invoice"
+   }
+  }
+ },
+ "bixolon get|05|GET /api/company?brand=bixolon": {
+  "status": 200,
+  "body": {
+   "company": {
+    "rif": "J-12345678-9",
+    "razon_social": "COMERCIAL LOS SIMULADORES C.A.",
+    "direccion": "Av. Principal, Edificio Fiscal, Piso 4",
+    "municipio": "CHACAO",
+    "ciudad": "CARACAS",
+    "estado": "MIRANDA",
+    "telefono": "0212-9555123",
+    "email": "",
+    "representante_legal": "JUAN PEREZ RODRIGUEZ",
+    "cedula_representante": "V-12345678",
+    "actividad_economica": "VENTA DE EQUIPOS DE OFICINA",
+    "nif": "",
+    "moneda": "Bs.",
+    "logo_text": "",
+    "condiciones_pago": "CONTADO 30 DIAS",
+    "contribuyente_especial": true,
+    "agente_retencion": true
+   },
+   "headers": [
+    "COMERCIAL LOS SIMULADORES C.A.",
+    "RIF: J-12345678-9",
+    "Av. Principal, Edificio Fiscal, Piso 4",
+    "CHACAO - MIRANDA",
+    "TEL: 0212-9555123",
+    "REP. LEGAL: JUAN PEREZ RODRIGUEZ",
+    "",
+    ""
+   ]
+  }
+ },
+ "bixolon hist2|00|GET /api/history?brand=bixolon&since=1": {
+  "status": 200,
+  "body": {
+   "entries": [
+    {
+     "seq": 2,
+     "ts": "<TS>",
+     "command": "@OpenFiscalReceipt",
+     "response": "@Response|OK|0|Documento fiscal abierto",
+     "ok": true
+    },
+    {
+     "seq": 3,
+     "ts": "<TS>",
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A.",
+     "ok": true
+    },
+    {
+     "seq": 4,
+     "ts": "<TS>",
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A.",
+     "ok": true
+    },
+    {
+     "seq": 5,
+     "ts": "<TS>",
+     "command": "@PrintLine|CAFE|2.0|15.0|general",
+     "response": "@Response|OK|0|CAFE|2.000|15.00|30.00",
+     "ok": true
+    },
+    {
+     "seq": 6,
+     "ts": "<TS>",
+     "command": "@PrintLine|PAN|3.0|8.0|reduced",
+     "response": "@Response|OK|0|PAN|3.000|8.00|24.00",
+     "ok": true
+    },
+    {
+     "seq": 7,
+     "ts": "<TS>",
+     "command": "@Subtotal",
+     "response": "@Response|OK|0|Subtotal: 48.08+IVA:5.92",
+     "ok": true
+    },
+    {
+     "seq": 8,
+     "ts": "<TS>",
+     "command": "@AddPayment|54.00|cash",
+     "response": "@Response|OK|0|Pago: 54.00|Pendiente: 0.00",
+     "ok": true
+    },
+    {
+     "seq": 9,
+     "ts": "<TS>",
+     "command": "@Close",
+     "response": "@Response|OK|0|Factura 1 cerrada|Total: 54.00|Impreso:1",
+     "ok": true
+    },
+    {
+     "seq": 10,
+     "ts": "<TS>",
+     "command": "@PrintXReport",
+     "response": "@Response|OK|0|Reporte X #1|Ventas: 54.00|Impreso:2",
+     "ok": true
+    },
+    {
+     "seq": 11,
+     "ts": "<TS>",
+     "command": "@PrintZReport",
+     "response": "@Response|OK|0|Reporte Z #1|Ventas: 54.00|Impreso:3",
+     "ok": true
+    }
+   ],
+   "count": 11
+  }
+ },
+ "bixolon hist2|01|GET /api/history?brand=bixolon&since=99999": {
+  "status": 200,
+  "body": {
+   "entries": [],
+   "count": 11
+  }
+ },
+ "epson raw|00|POST /api/command": {
+  "status": 200,
+  "body": {
+   "command": "@Status",
+   "response": "0x04|0x00|@Response|OK|0|Status: 0x04|Error: 0x00|Doc: CERRADO|Ventas: 0.00",
+   "seq": 1
+  }
+ },
+ "epson sale|00|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@OpenFiscalReceipt",
+    "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas"
+   ],
+   "responses": [
+    {
+     "command": "@OpenFiscalReceipt",
+     "response": "0x05|0x00|@Response|OK|0|Documento fiscal abierto"
+    },
+    {
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "0x05|0x00|@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A."
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "epson sale|01|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas"
+   ],
+   "responses": [
+    {
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "0x05|0x00|@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A."
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "epson sale|02|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@PrintLine|CAFE|2.0|15.0|general"
+   ],
+   "responses": [
+    {
+     "command": "@PrintLine|CAFE|2.0|15.0|general",
+     "response": "0x05|0x00|@Response|OK|0|CAFE|2.000|15.00|30.00"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "epson sale|03|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@PrintLine|PAN|3.0|8.0|reduced"
+   ],
+   "responses": [
+    {
+     "command": "@PrintLine|PAN|3.0|8.0|reduced",
+     "response": "0x05|0x00|@Response|OK|0|PAN|3.000|8.00|24.00"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "epson sale|04|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@Subtotal"
+   ],
+   "responses": [
+    {
+     "command": "@Subtotal",
+     "response": "0x05|0x00|@Response|OK|0|Subtotal: 48.08+IVA:5.92"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "epson sale|05|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@AddPayment|54.00|cash"
+   ],
+   "responses": [
+    {
+     "command": "@AddPayment|54.00|cash",
+     "response": "0x05|0x00|@Response|OK|0|Pago: 54.00|Pendiente: 0.00"
+    }
+   ],
+   "last_job_id": null
+  }
+ },
+ "epson sale|06|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@Close"
+   ],
+   "responses": [
+    {
+     "command": "@Close",
+     "response": "0x04|0x00|@Response|OK|0|Factura 1 cerrada|Total: 54.00|Impreso:1"
+    }
+   ],
+   "last_job_id": 1
+  }
+ },
+ "epson report|00|POST /api/report": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@PrintXReport"
+   ],
+   "responses": [
+    {
+     "command": "@PrintXReport",
+     "response": "0x04|0x00|@Response|OK|0|Reporte X #1|Ventas: 54.00|Impreso:2"
+    }
+   ],
+   "last_job_id": 2
+  }
+ },
+ "epson report|01|POST /api/report": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "@PrintZReport"
+   ],
+   "responses": [
+    {
+     "command": "@PrintZReport",
+     "response": "0x04|0x00|@Response|OK|0|Reporte Z #1|Ventas: 54.00|Impreso:3"
+    }
+   ],
+   "last_job_id": 3
+  }
+ },
+ "epson company|00|POST /api/company": {
+  "status": 200,
+  "body": {
+   "company": {
+    "rif": "J-12345678-9",
+    "razon_social": "COMERCIAL LOS SIMULADORES C.A.",
+    "direccion": "Av. Principal, Edificio Fiscal, Piso 4",
+    "municipio": "CHACAO",
+    "ciudad": "CARACAS",
+    "estado": "MIRANDA",
+    "telefono": "0212-9555123",
+    "email": "",
+    "representante_legal": "JUAN PEREZ RODRIGUEZ",
+    "cedula_representante": "V-12345678",
+    "actividad_economica": "VENTA DE EQUIPOS DE OFICINA",
+    "nif": "",
+    "moneda": "Bs.",
+    "logo_text": "",
+    "condiciones_pago": "CONTADO 30 DIAS",
+    "contribuyente_especial": true,
+    "agente_retencion": true
+   },
+   "headers": [
+    "COMERCIAL LOS SIMULADORES C.A.",
+    "RIF: J-12345678-9",
+    "Av. Principal, Edificio Fiscal, Piso 4",
+    "CHACAO - MIRANDA",
+    "TEL: 0212-9555123",
+    "REP. LEGAL: JUAN PEREZ RODRIGUEZ",
+    "",
+    ""
+   ]
+  }
+ },
+ "epson get|00|GET /api/state?brand=epson": {
+  "status": 200,
+  "body": {
+   "brand": "EPSON",
+   "model": "TM2000",
+   "command_count": 11,
+   "status": {
+    "code": 4,
+    "hex": "0x04",
+    "name": "Modo fiscal - en espera"
+   },
+   "error": {
+    "code": 0,
+    "hex": "0x00",
+    "name": "Sin error"
+   },
+   "mode": "fiscal",
+   "memory_status": "ok",
+   "document": {
+    "open": false,
+    "type": null,
+    "items": 0,
+    "subtotal": 0.0,
+    "payable": 0.0,
+    "paid": 0.0,
+    "customer": {
+     "rif": "",
+     "name": "",
+     "address": ""
+    }
+   },
+   "counters": {
+    "invoices": 1,
+    "credit_notes": 0,
+    "debit_notes": 0,
+    "non_fiscal": 0,
+    "x_reports": 1,
+    "z_reports": 1,
+    "daily_closure": 1,
+    "fiscal_docs": 1
+   },
+   "daily": {
+    "invoices": 0,
+    "credit_notes": 0,
+    "debit_notes": 0,
+    "non_fiscal": 0,
+    "sales": 0.0,
+    "tax": 0.0
+   },
+   "totals": {
+    "lifetime_sales": 54.0,
+    "lifetime_tax": 5.92
+   },
+   "payments": {},
+   "tax_rates": {
+    "general": 16.0,
+    "reduced": 8.0,
+    "additional": 30.0
+   },
+   "serial_number": "MLSTM200001",
+   "rif": "J-12345678-9",
+   "memory": {
+    "total_mb": 8.0,
+    "free_mb": 7.5,
+    "used_mb": 0.5,
+    "used_pct": 6.3
+   },
+   "print_job_seq": 3,
+   "headers": [
+    "COMERCIAL LOS SIMULADORES C.A.",
+    "RIF: J-12345678-9",
+    "Av. Principal, Edificio Fiscal, Piso 4",
+    "CHACAO - MIRANDA",
+    "TEL: 0212-9555123",
+    "REP. LEGAL: JUAN PEREZ RODRIGUEZ",
+    "",
+    ""
+   ],
+   "is_tfhka": false
+  }
+ },
+ "epson get|01|GET /api/history?brand=epson&since=0": {
+  "status": 200,
+  "body": {
+   "entries": [
+    {
+     "seq": 1,
+     "ts": "<TS>",
+     "command": "@Status",
+     "response": "0x04|0x00|@Response|OK|0|Status: 0x04|Error: 0x00|Doc: CERRADO|Ventas: 0.00",
+     "ok": false
+    },
+    {
+     "seq": 2,
+     "ts": "<TS>",
+     "command": "@OpenFiscalReceipt",
+     "response": "0x05|0x00|@Response|OK|0|Documento fiscal abierto",
+     "ok": true
+    },
+    {
+     "seq": 3,
+     "ts": "<TS>",
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "0x05|0x00|@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A.",
+     "ok": true
+    },
+    {
+     "seq": 4,
+     "ts": "<TS>",
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "0x05|0x00|@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A.",
+     "ok": true
+    },
+    {
+     "seq": 5,
+     "ts": "<TS>",
+     "command": "@PrintLine|CAFE|2.0|15.0|general",
+     "response": "0x05|0x00|@Response|OK|0|CAFE|2.000|15.00|30.00",
+     "ok": true
+    },
+    {
+     "seq": 6,
+     "ts": "<TS>",
+     "command": "@PrintLine|PAN|3.0|8.0|reduced",
+     "response": "0x05|0x00|@Response|OK|0|PAN|3.000|8.00|24.00",
+     "ok": true
+    },
+    {
+     "seq": 7,
+     "ts": "<TS>",
+     "command": "@Subtotal",
+     "response": "0x05|0x00|@Response|OK|0|Subtotal: 48.08+IVA:5.92",
+     "ok": true
+    },
+    {
+     "seq": 8,
+     "ts": "<TS>",
+     "command": "@AddPayment|54.00|cash",
+     "response": "0x05|0x00|@Response|OK|0|Pago: 54.00|Pendiente: 0.00",
+     "ok": true
+    },
+    {
+     "seq": 9,
+     "ts": "<TS>",
+     "command": "@Close",
+     "response": "0x04|0x00|@Response|OK|0|Factura 1 cerrada|Total: 54.00|Impreso:1",
+     "ok": true
+    },
+    {
+     "seq": 10,
+     "ts": "<TS>",
+     "command": "@PrintXReport",
+     "response": "0x04|0x00|@Response|OK|0|Reporte X #1|Ventas: 54.00|Impreso:2",
+     "ok": true
+    },
+    {
+     "seq": 11,
+     "ts": "<TS>",
+     "command": "@PrintZReport",
+     "response": "0x04|0x00|@Response|OK|0|Reporte Z #1|Ventas: 54.00|Impreso:3",
+     "ok": true
+    }
+   ],
+   "count": 11
+  }
+ },
+ "epson get|02|GET /api/preview?brand=epson": {
+  "status": 200,
+  "body": {
+   "open": false,
+   "lines": []
+  }
+ },
+ "epson get|03|GET /api/jobs?brand=epson": {
+  "status": 200,
+  "body": {
+   "jobs": [
+    {
+     "id": 3,
+     "kind": "z_report",
+     "title": "REPORTE Z N° 0001",
+     "ts": "<TS>",
+     "meta": {
+      "number": 1,
+      "total_sales": 54.0,
+      "total_tax": 5.92
+     }
+    },
+    {
+     "id": 2,
+     "kind": "x_report",
+     "title": "REPORTE X N° 0001",
+     "ts": "<TS>",
+     "meta": {
+      "number": 1,
+      "total_sales": 54.0,
+      "total_tax": 5.92
+     }
+    },
+    {
+     "id": 1,
+     "kind": "receipt",
+     "title": "FACTURA FISCAL N° 00000001",
+     "ts": "<TS>",
+     "meta": {
+      "number": 1,
+      "total": 54.0,
+      "doc_type": "invoice"
+     }
+    }
+   ]
+  }
+ },
+ "epson get|04|GET /api/job/1?brand=epson": {
+  "status": 200,
+  "body": {
+   "id": 1,
+   "kind": "receipt",
+   "title": "FACTURA FISCAL N° 00000001",
+   "ts": "<TS>",
+   "brand": "EPSON",
+   "lines": [
+    "            EMPRESA SIN NOMBRE            ",
+    "==========================================",
+    "              FACTURA FISCAL              ",
+    "               N° 00000001                ",
+    "           <TS>           ",
+    "==========================================",
+    "CLIENTE:",
+    "  RIF/C.I: J-12345678-9",
+    "EMPRESA DE PRUEBA C.A.",
+    "Av. Principal, Caracas",
+    "------------------------------------------",
+    "   CANT DESCRIPCION          PREC  IVA   IMPORTE",
+    "------------------------------------------",
+    "  2.000 CAFE                15.00  G16     30.00",
+    "  3.000 PAN                  8.00   R8     24.00",
+    "------------------------------------------",
+    "SUBTOTAL:                            54,00",
+    "  BASE IVA 16%:                      25,86",
+    "  IVA 16%:                            4,14",
+    "  BASE IVA 8%:                       22,22",
+    "  IVA 8%:                             1,78",
+    "==========================================",
+    "TOTAL Bs.:                           54,00",
+    "==========================================",
+    "EFECTIVO:                            54,00",
+    "------------------------------------------",
+    "  SON: CINCUENTA Y CUATRO CON 00/100",
+    "------------------------------------------",
+    "MAQUINA:                       MLSTM200001",
+    "RIF MAQ.:                     J-44443333-5",
+    "COND. PAGO:                        CONTADO",
+    "        ART. 63 Ley IVA - Ley Org.        ",
+    "     Simplificacion y Racionalizacion     ",
+    "          del Proceso Tributario          ",
+    "------------------------------------------",
+    "          GRACIAS POR SU COMPRA           ",
+    "     * * * * * * * * * * * * * * * *      ",
+    "         DOCUMENTO FISCAL DIGITAL         ",
+    "       SIMULADOR - NO VALOR FISCAL        "
+   ],
+   "meta": {
+    "number": 1,
+    "total": 54.0,
+    "doc_type": "invoice"
+   }
+  }
+ },
+ "epson get|05|GET /api/company?brand=epson": {
+  "status": 200,
+  "body": {
+   "company": {
+    "rif": "J-12345678-9",
+    "razon_social": "COMERCIAL LOS SIMULADORES C.A.",
+    "direccion": "Av. Principal, Edificio Fiscal, Piso 4",
+    "municipio": "CHACAO",
+    "ciudad": "CARACAS",
+    "estado": "MIRANDA",
+    "telefono": "0212-9555123",
+    "email": "",
+    "representante_legal": "JUAN PEREZ RODRIGUEZ",
+    "cedula_representante": "V-12345678",
+    "actividad_economica": "VENTA DE EQUIPOS DE OFICINA",
+    "nif": "",
+    "moneda": "Bs.",
+    "logo_text": "",
+    "condiciones_pago": "CONTADO 30 DIAS",
+    "contribuyente_especial": true,
+    "agente_retencion": true
+   },
+   "headers": [
+    "COMERCIAL LOS SIMULADORES C.A.",
+    "RIF: J-12345678-9",
+    "Av. Principal, Edificio Fiscal, Piso 4",
+    "CHACAO - MIRANDA",
+    "TEL: 0212-9555123",
+    "REP. LEGAL: JUAN PEREZ RODRIGUEZ",
+    "",
+    ""
+   ]
+  }
+ },
+ "epson hist2|00|GET /api/history?brand=epson&since=1": {
+  "status": 200,
+  "body": {
+   "entries": [
+    {
+     "seq": 2,
+     "ts": "<TS>",
+     "command": "@OpenFiscalReceipt",
+     "response": "0x05|0x00|@Response|OK|0|Documento fiscal abierto",
+     "ok": true
+    },
+    {
+     "seq": 3,
+     "ts": "<TS>",
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "0x05|0x00|@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A.",
+     "ok": true
+    },
+    {
+     "seq": 4,
+     "ts": "<TS>",
+     "command": "@CustomerData|J-12345678-9|EMPRESA DE PRUEBA C.A.|Av. Principal, Caracas",
+     "response": "0x05|0x00|@Response|OK|0|Cliente J-12345678-9 EMPRESA DE PRUEBA C.A.",
+     "ok": true
+    },
+    {
+     "seq": 5,
+     "ts": "<TS>",
+     "command": "@PrintLine|CAFE|2.0|15.0|general",
+     "response": "0x05|0x00|@Response|OK|0|CAFE|2.000|15.00|30.00",
+     "ok": true
+    },
+    {
+     "seq": 6,
+     "ts": "<TS>",
+     "command": "@PrintLine|PAN|3.0|8.0|reduced",
+     "response": "0x05|0x00|@Response|OK|0|PAN|3.000|8.00|24.00",
+     "ok": true
+    },
+    {
+     "seq": 7,
+     "ts": "<TS>",
+     "command": "@Subtotal",
+     "response": "0x05|0x00|@Response|OK|0|Subtotal: 48.08+IVA:5.92",
+     "ok": true
+    },
+    {
+     "seq": 8,
+     "ts": "<TS>",
+     "command": "@AddPayment|54.00|cash",
+     "response": "0x05|0x00|@Response|OK|0|Pago: 54.00|Pendiente: 0.00",
+     "ok": true
+    },
+    {
+     "seq": 9,
+     "ts": "<TS>",
+     "command": "@Close",
+     "response": "0x04|0x00|@Response|OK|0|Factura 1 cerrada|Total: 54.00|Impreso:1",
+     "ok": true
+    },
+    {
+     "seq": 10,
+     "ts": "<TS>",
+     "command": "@PrintXReport",
+     "response": "0x04|0x00|@Response|OK|0|Reporte X #1|Ventas: 54.00|Impreso:2",
+     "ok": true
+    },
+    {
+     "seq": 11,
+     "ts": "<TS>",
+     "command": "@PrintZReport",
+     "response": "0x04|0x00|@Response|OK|0|Reporte Z #1|Ventas: 54.00|Impreso:3",
+     "ok": true
+    }
+   ],
+   "count": 11
+  }
+ },
+ "epson hist2|01|GET /api/history?brand=epson&since=99999": {
+  "status": 200,
+  "body": {
+   "entries": [],
+   "count": 11
+  }
+ },
+ "tfhka preview-open|00|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "iR*V-11111111",
+    "iS*PREVIA ABIERTA",
+    "i01Calle Luna"
+   ],
+   "responses": [
+    {
+     "command": "iR*V-11111111",
+     "response": "0|RIF registrado"
+    },
+    {
+     "command": "iS*PREVIA ABIERTA",
+     "response": "0|Nombre registrado"
+    },
+    {
+     "command": "i01Calle Luna",
+     "response": "0|Direccion registrada"
+    }
+   ],
+   "last_job_id": 3
+  }
+ },
+ "tfhka preview-open|01|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "    1.000      5.00ITEM PREVIA"
+   ],
+   "responses": [
+    {
+     "command": "    1.000      5.00ITEM PREVIA",
+     "response": "ERROR|0x50|Comando desconocido"
+    }
+   ],
+   "last_job_id": 3
+  }
+ },
+ "tfhka preview-open|02|GET /api/preview?brand=tfhka": {
+  "status": 200,
+  "body": {
+   "open": false,
+   "lines": []
+  }
+ },
+ "tfhka preview-open|03|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "commands": [],
+   "responses": [],
+   "note": "Sin documento"
+  }
+ },
+ "tfhka preview-open|04|GET /api/preview?brand=tfhka": {
+  "status": 200,
+  "body": {
+   "open": false,
+   "lines": []
+  }
+ },
+ "errors|00|POST /api/command": {
+  "status": 400,
+  "body": {
+   "error": "command required"
+  }
+ },
+ "errors|01|POST /api/command": {
+  "status": 200,
+  "body": {
+   "command": "S1",
+   "response": "0|MLTFHKA001|J-12345678-9|1|1|1|0|0|0|0.00|<TS>",
+   "seq": 19
+  }
+ },
+ "errors|02|POST /api/sale": {
+  "status": 400,
+  "body": {
+   "error": "action required"
+  }
+ },
+ "errors|03|POST /api/sale": {
+  "status": 200,
+  "body": {
+   "error": "Acción desconocida: nope"
+  }
+ },
+ "errors|04|POST /api/company": {
+  "status": 400,
+  "body": {
+   "error": "company data required"
+  }
+ },
+ "errors|05|POST /api/report": {
+  "status": 200,
+  "body": {
+   "commands": [
+    "U0X"
+   ],
+   "responses": [
+    {
+     "command": "U0X",
+     "response": "0|Reporte X #2|Ventas: 0.00|IVA: 0.00|Impreso:4"
+    }
+   ],
+   "last_job_id": 4
+  }
+ },
+ "errors|06|GET /api/state": {
+  "status": 200,
+  "body": {
+   "brand": "TFHKA",
+   "model": "TFHKA",
+   "command_count": 20,
+   "status": {
+    "code": 4,
+    "hex": "0x04",
+    "name": "Modo fiscal - en espera"
+   },
+   "error": {
+    "code": 0,
+    "hex": "0x00",
+    "name": "Sin error"
+   },
+   "mode": "fiscal",
+   "memory_status": "ok",
+   "document": {
+    "open": false,
+    "type": null,
+    "items": 0,
+    "subtotal": 0.0,
+    "payable": 0.0,
+    "paid": 0.0,
+    "customer": {
+     "rif": "V-11111111",
+     "name": "PREVIA ABIERTA",
+     "address": "Calle Luna"
+    }
+   },
+   "counters": {
+    "invoices": 1,
+    "credit_notes": 0,
+    "debit_notes": 0,
+    "non_fiscal": 0,
+    "x_reports": 2,
+    "z_reports": 1,
+    "daily_closure": 1,
+    "fiscal_docs": 1
+   },
+   "daily": {
+    "invoices": 0,
+    "credit_notes": 0,
+    "debit_notes": 0,
+    "non_fiscal": 0,
+    "sales": 0.0,
+    "tax": 0.0
+   },
+   "totals": {
+    "lifetime_sales": 54.0,
+    "lifetime_tax": 5.92
+   },
+   "payments": {},
+   "tax_rates": {
+    "general": 16.0,
+    "reduced": 8.0,
+    "additional": 30.0
+   },
+   "serial_number": "MLTFHKA001",
+   "rif": "J-12345678-9",
+   "memory": {
+    "total_mb": 4.0,
+    "free_mb": 3.5,
+    "used_mb": 0.5,
+    "used_pct": 12.5
+   },
+   "print_job_seq": 4,
+   "headers": [
+    "COMERCIAL LOS SIMULADORES C.A.",
+    "RIF: J-12345678-9",
+    "Av. Principal, Edificio Fiscal, Piso 4",
+    "CHACAO - MIRANDA",
+    "TEL: 0212-9555123",
+    "REP. LEGAL: JUAN PEREZ RODRIGUEZ",
+    "",
+    ""
+   ],
+   "is_tfhka": true
+  }
+ },
+ "errors|07|GET /api/nope": {
+  "status": 404,
+  "body": {
+   "error": "not found"
+  }
+ },
+ "errors|08|GET /api/job/99999?brand=tfhka": {
+  "status": 404,
+  "body": {
+   "error": "job not found"
+  }
+ },
+ "errors|09|GET /api/job/abc?brand=tfhka": {
+  "status": 400,
+  "body": {
+   "error": "bad id"
+  }
+ },
+ "errors|10|POST /api/nope": {
+  "status": 404,
+  "body": {
+   "error": "not found"
+  }
+ }
+}

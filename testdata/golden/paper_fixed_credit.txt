@@ -1,0 +1,50 @@
+      COMERCIAL LOS SIMULADORES C.A.      
+            RIF: J-12345678-9             
+             LOS SIMULADORES              
+  Avenida Principal de Los Chaguaramos,   
+    Edificio Fiscal, Piso 4, Oficina B    
+        CHACAO - CARACAS - MIRANDA        
+            Telf: 0212-9555123            
+ Rep. Legal: JUAN PEREZ RODRIGUEZ - C.I.  
+                V-12345678                
+ Actividad: VENTA DE EQUIPOS DE OFICINA Y 
+               SUMINISTROS                
+          CONTRIBUYENTE ESPECIAL          
+         AGENTE DE RETENCION IVA          
+==========================================
+             NOTA DE CREDITO              
+               N° 00000007                
+           15/01/2026  10:30:00           
+==========================================
+CLIENTE:
+  CONSUMIDOR FINAL
+------------------------------------------
+FACT. REFERIDA:                   00000041
+FECHA ORIG.:                    2026-01-10
+SERIE ORIG.:                    MLTFHKA001
+------------------------------------------
+   CANT DESCRIPCION          PREC  IVA   IMPORTE
+------------------------------------------
+  1.000 CAFE                15.00  G16     15.00
+------------------------------------------
+SUBTOTAL:                            15,00
+  BASE IVA 16%:                      12,93
+  IVA 16%:                            2,07
+==========================================
+TOTAL Bs.:                           15,00
+==========================================
+EFECTIVO:                            15,00
+------------------------------------------
+  SON: QUINCE CON 00/100
+------------------------------------------
+MAQUINA:                        MLTFHKA001
+RIF MAQ.:                     J-12345678-9
+COND. PAGO:                CONTADO 30 DIAS
+        ART. 63 Ley IVA - Ley Org.        
+     Simplificacion y Racionalizacion     
+          del Proceso Tributario          
+------------------------------------------
+          GRACIAS POR SU COMPRA           
+     * * * * * * * * * * * * * * * *      
+         DOCUMENTO FISCAL DIGITAL         
+       SIMULADOR - NO VALOR FISCAL        

@@ -1,0 +1,180 @@
+invoice_x_z/receipt/1	            EMPRESA SIN NOMBRE            
+invoice_x_z/receipt/1	==========================================
+invoice_x_z/receipt/1	              FACTURA FISCAL              
+invoice_x_z/receipt/1	               N° 00000001                
+invoice_x_z/receipt/1	           <TS>           
+invoice_x_z/receipt/1	==========================================
+invoice_x_z/receipt/1	CLIENTE:
+invoice_x_z/receipt/1	  RIF/C.I: J-12345678-9
+invoice_x_z/receipt/1	EMPRESA C.A.
+invoice_x_z/receipt/1	Av. Principal, Caracas
+invoice_x_z/receipt/1	------------------------------------------
+invoice_x_z/receipt/1	   CANT DESCRIPCION          PREC  IVA   IMPORTE
+invoice_x_z/receipt/1	------------------------------------------
+invoice_x_z/receipt/1	  1.000 CAFE                15.00  G16     15.00
+invoice_x_z/receipt/1	  2.000 PAN                  8.00   R8     16.00
+invoice_x_z/receipt/1	------------------------------------------
+invoice_x_z/receipt/1	SUBTOTAL:                            31,00
+invoice_x_z/receipt/1	  BASE IVA 16%:                      12,93
+invoice_x_z/receipt/1	  IVA 16%:                            2,07
+invoice_x_z/receipt/1	  BASE IVA 8%:                       14,81
+invoice_x_z/receipt/1	  IVA 8%:                             1,19
+invoice_x_z/receipt/1	==========================================
+invoice_x_z/receipt/1	TOTAL Bs.:                           31,00
+invoice_x_z/receipt/1	==========================================
+invoice_x_z/receipt/1	EFECTIVO:                            31,00
+invoice_x_z/receipt/1	------------------------------------------
+invoice_x_z/receipt/1	  SON: TREINTA Y UNO CON 00/100
+invoice_x_z/receipt/1	------------------------------------------
+invoice_x_z/receipt/1	MAQUINA:                        MLTFHKA001
+invoice_x_z/receipt/1	RIF MAQ.:                     J-12345678-9
+invoice_x_z/receipt/1	COND. PAGO:                        CONTADO
+invoice_x_z/receipt/1	        ART. 63 Ley IVA - Ley Org.        
+invoice_x_z/receipt/1	     Simplificacion y Racionalizacion     
+invoice_x_z/receipt/1	          del Proceso Tributario          
+invoice_x_z/receipt/1	------------------------------------------
+invoice_x_z/receipt/1	          GRACIAS POR SU COMPRA           
+invoice_x_z/receipt/1	     * * * * * * * * * * * * * * * *      
+invoice_x_z/receipt/1	         DOCUMENTO FISCAL DIGITAL         
+invoice_x_z/receipt/1	       SIMULADOR - NO VALOR FISCAL        
+invoice_x_z/x_report/2	            EMPRESA SIN NOMBRE            
+invoice_x_z/x_report/2	==========================================
+invoice_x_z/x_report/2	        REPORTE X - CORTE DE CAJA         
+invoice_x_z/x_report/2	             REPORTE N° 0001              
+invoice_x_z/x_report/2	           <TS>           
+invoice_x_z/x_report/2	==========================================
+invoice_x_z/x_report/2	DOCUMENTOS DEL DIA:
+invoice_x_z/x_report/2	  Facturas:                              1
+invoice_x_z/x_report/2	  Notas de credito:                      0
+invoice_x_z/x_report/2	  Notas de debito:                       0
+invoice_x_z/x_report/2	  No fiscales:                           0
+invoice_x_z/x_report/2	------------------------------------------
+invoice_x_z/x_report/2	VENTAS POR ALICUOTA:
+invoice_x_z/x_report/2	  GENERAL 16%:                       12,93
+invoice_x_z/x_report/2	    IVA:                              2,07
+invoice_x_z/x_report/2	  REDUCIDA 8%:                       14,81
+invoice_x_z/x_report/2	    IVA:                              1,19
+invoice_x_z/x_report/2	------------------------------------------
+invoice_x_z/x_report/2	FORMAS DE PAGO:
+invoice_x_z/x_report/2	  EFECTIVO:                          31,00
+invoice_x_z/x_report/2	==========================================
+invoice_x_z/x_report/2	TOTAL VENTAS:                        31,00
+invoice_x_z/x_report/2	TOTAL IVA:                            3,25
+invoice_x_z/x_report/2	==========================================
+invoice_x_z/x_report/2	         ESTE REPORTE NO REINICIA         
+invoice_x_z/x_report/2	           LOS TOTALES DEL DIA            
+invoice_x_z/x_report/2	------------------------------------------
+invoice_x_z/x_report/2	ULTIMA FACTURA:                   00000001
+invoice_x_z/x_report/2	     * * * * * * * * * * * * * * * *      
+invoice_x_z/x_report/2	       SIMULADOR - NO VALOR FISCAL        
+invoice_x_z/z_report/3	            EMPRESA SIN NOMBRE            
+invoice_x_z/z_report/3	==========================================
+invoice_x_z/z_report/3	        REPORTE Z - CIERRE DIARIO         
+invoice_x_z/z_report/3	             REPORTE N° 0001              
+invoice_x_z/z_report/3	           <TS>           
+invoice_x_z/z_report/3	==========================================
+invoice_x_z/z_report/3	DOCUMENTOS DEL DIA:
+invoice_x_z/z_report/3	  Facturas:                              1
+invoice_x_z/z_report/3	  Notas de credito:                      0
+invoice_x_z/z_report/3	  Notas de debito:                       0
+invoice_x_z/z_report/3	  No fiscales:                           0
+invoice_x_z/z_report/3	------------------------------------------
+invoice_x_z/z_report/3	VENTAS POR ALICUOTA:
+invoice_x_z/z_report/3	  GENERAL 16%:                       12,93
+invoice_x_z/z_report/3	    IVA:                              2,07
+invoice_x_z/z_report/3	  REDUCIDA 8%:                       14,81
+invoice_x_z/z_report/3	    IVA:                              1,19
+invoice_x_z/z_report/3	------------------------------------------
+invoice_x_z/z_report/3	FORMAS DE PAGO:
+invoice_x_z/z_report/3	  EFECTIVO:                          31,00
+invoice_x_z/z_report/3	==========================================
+invoice_x_z/z_report/3	TOTAL VENTAS:                        31,00
+invoice_x_z/z_report/3	TOTAL IVA:                            3,25
+invoice_x_z/z_report/3	==========================================
+invoice_x_z/z_report/3	              CIERRE DEL DIA              
+invoice_x_z/z_report/3	         TOTALES REINICIADOS TRAS         
+invoice_x_z/z_report/3	               ESTE REPORTE               
+invoice_x_z/z_report/3	------------------------------------------
+invoice_x_z/z_report/3	ULTIMA FACTURA:                   00000001
+invoice_x_z/z_report/3	CIERRES DIARIOS:                         1
+invoice_x_z/z_report/3	     * * * * * * * * * * * * * * * *      
+invoice_x_z/z_report/3	       SIMULADOR - NO VALOR FISCAL        
+credit_note/credit_note/1	            EMPRESA SIN NOMBRE            
+credit_note/credit_note/1	==========================================
+credit_note/credit_note/1	             NOTA DE CREDITO              
+credit_note/credit_note/1	               N° 00000001                
+credit_note/credit_note/1	           <TS>           
+credit_note/credit_note/1	==========================================
+credit_note/credit_note/1	CLIENTE:
+credit_note/credit_note/1	  RIF/C.I: J-12345678-9
+credit_note/credit_note/1	------------------------------------------
+credit_note/credit_note/1	FACT. REFERIDA:                        001
+credit_note/credit_note/1	FECHA ORIG.:                    2024-01-15
+credit_note/credit_note/1	SERIE ORIG.:                    MLTFHKA001
+credit_note/credit_note/1	------------------------------------------
+credit_note/credit_note/1	   CANT DESCRIPCION          PREC  IVA   IMPORTE
+credit_note/credit_note/1	------------------------------------------
+credit_note/credit_note/1	  1.000 CAFE                15.00  G16     15.00
+credit_note/credit_note/1	------------------------------------------
+credit_note/credit_note/1	SUBTOTAL:                            15,00
+credit_note/credit_note/1	  BASE IVA 16%:                      12,93
+credit_note/credit_note/1	  IVA 16%:                            2,07
+credit_note/credit_note/1	==========================================
+credit_note/credit_note/1	TOTAL Bs.:                           15,00
+credit_note/credit_note/1	==========================================
+credit_note/credit_note/1	------------------------------------------
+credit_note/credit_note/1	  SON: QUINCE CON 00/100
+credit_note/credit_note/1	------------------------------------------
+credit_note/credit_note/1	MAQUINA:                        MLTFHKA001
+credit_note/credit_note/1	RIF MAQ.:                     J-12345678-9
+credit_note/credit_note/1	COND. PAGO:                        CONTADO
+credit_note/credit_note/1	        ART. 63 Ley IVA - Ley Org.        
+credit_note/credit_note/1	     Simplificacion y Racionalizacion     
+credit_note/credit_note/1	          del Proceso Tributario          
+credit_note/credit_note/1	------------------------------------------
+credit_note/credit_note/1	          GRACIAS POR SU COMPRA           
+credit_note/credit_note/1	     * * * * * * * * * * * * * * * *      
+credit_note/credit_note/1	         DOCUMENTO FISCAL DIGITAL         
+credit_note/credit_note/1	       SIMULADOR - NO VALOR FISCAL        
+debit_note/debit_note/1	            EMPRESA SIN NOMBRE            
+debit_note/debit_note/1	==========================================
+debit_note/debit_note/1	              NOTA DE DEBITO              
+debit_note/debit_note/1	               N° 00000001                
+debit_note/debit_note/1	           <TS>           
+debit_note/debit_note/1	==========================================
+debit_note/debit_note/1	CLIENTE:
+debit_note/debit_note/1	  CONSUMIDOR FINAL
+debit_note/debit_note/1	------------------------------------------
+debit_note/debit_note/1	------------------------------------------
+debit_note/debit_note/1	   CANT DESCRIPCION          PREC  IVA   IMPORTE
+debit_note/debit_note/1	------------------------------------------
+debit_note/debit_note/1	  1.000 CAFE                15.00  G16     15.00
+debit_note/debit_note/1	------------------------------------------
+debit_note/debit_note/1	SUBTOTAL:                            15,00
+debit_note/debit_note/1	  BASE IVA 16%:                      12,93
+debit_note/debit_note/1	  IVA 16%:                            2,07
+debit_note/debit_note/1	==========================================
+debit_note/debit_note/1	TOTAL Bs.:                           15,00
+debit_note/debit_note/1	==========================================
+debit_note/debit_note/1	------------------------------------------
+debit_note/debit_note/1	  SON: QUINCE CON 00/100
+debit_note/debit_note/1	------------------------------------------
+debit_note/debit_note/1	MAQUINA:                        MLTFHKA001
+debit_note/debit_note/1	RIF MAQ.:                     J-12345678-9
+debit_note/debit_note/1	COND. PAGO:                        CONTADO
+debit_note/debit_note/1	        ART. 63 Ley IVA - Ley Org.        
+debit_note/debit_note/1	     Simplificacion y Racionalizacion     
+debit_note/debit_note/1	          del Proceso Tributario          
+debit_note/debit_note/1	------------------------------------------
+debit_note/debit_note/1	          GRACIAS POR SU COMPRA           
+debit_note/debit_note/1	     * * * * * * * * * * * * * * * *      
+debit_note/debit_note/1	         DOCUMENTO FISCAL DIGITAL         
+debit_note/debit_note/1	       SIMULADOR - NO VALOR FISCAL        
+non_fiscal/non_fiscal/1	            EMPRESA SIN NOMBRE            
+non_fiscal/non_fiscal/1	==========================================
+non_fiscal/non_fiscal/1	           DOCUMENTO NO FISCAL            
+non_fiscal/non_fiscal/1	               N° 00000001                
+non_fiscal/non_fiscal/1	           <TS>           
+non_fiscal/non_fiscal/1	==========================================
+non_fiscal/non_fiscal/1	------------------------------------------
+non_fiscal/non_fiscal/1	        DOCUMENTO SIN VALOR FISCAL        

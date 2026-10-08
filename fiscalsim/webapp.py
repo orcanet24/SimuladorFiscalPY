@@ -191,6 +191,9 @@ def host_action(sim: FiscalPrinterSimulator, action: str,
         amount = float(params.get("amount", 0))
         method = params.get("method", "cash")
         if is_tfhka:
+            # TFHKA declares the tender type with 103 before the 100 amount
+            if method and method != "cash":
+                commands.append(f"103{method}")
             commands.append(f"100{amount:.2f}")
         else:
             commands.append(f"@AddPayment|{amount:.2f}|{method}")

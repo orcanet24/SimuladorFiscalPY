@@ -1,0 +1,89 @@
+{"scenario": "invoice_full", "i": 0, "command": "iR*J-12345678-9", "response": "0|RIF registrado"}
+{"scenario": "invoice_full", "i": 1, "command": "iS*EMPRESA DE PRUEBA C.A.", "response": "0|Nombre registrado"}
+{"scenario": "invoice_full", "i": 2, "command": "i01Av. Principal, Caracas", "response": "0|Direccion registrada"}
+{"scenario": "invoice_full", "i": 3, "command": "i020414-1234567", "response": "0|Telefono registrado"}
+{"scenario": "invoice_full", "i": 4, "command": "!   1.000     15.00 CAFE", "response": "0|Item|CAFE|1.000|15.00|2.07|15.00"}
+{"scenario": "invoice_full", "i": 5, "command": "\"   2.000      8.00 PAN", "response": "0|Item|PAN|2.000|8.00|1.19|16.00"}
+{"scenario": "invoice_full", "i": 6, "command": "#   1.000   1000.00 LICORES", "response": "0|Item|LICORES|1.000|1000.00|230.77|1000.00"}
+{"scenario": "invoice_full", "i": 7, "command": "3", "response": "0|Subtotal: 796.98 + 234.02 = 1031.00"}
+{"scenario": "invoice_full", "i": 8, "command": "1002031.00", "response": "0|Pago: 2031.00|Pendiente: -1000.00"}
+{"scenario": "invoice_full", "i": 9, "command": "101", "response": "0|Factura 1|Total: 1031.00|Impreso:1"}
+{"scenario": "invoice_full", "i": 10, "command": "S1", "response": "0|MLTFHKA001|J-12345678-9|1|0|1|0|0|0|1031.00|<TS>"}
+{"scenario": "invoice_full", "i": 11, "command": "U0X", "response": "0|Reporte X #1|Ventas: 1031.00|IVA: 234.02|Impreso:2"}
+{"scenario": "invoice_full", "i": 12, "command": "U0Z", "response": "0|Reporte Z #1|Ventas: 1031.00|IVA: 234.02|Impreso:3"}
+{"scenario": "credit_note", "i": 0, "command": "iR*J-12345678-9", "response": "0|RIF registrado"}
+{"scenario": "credit_note", "i": 1, "command": "iS*EMPRESA C.A.", "response": "0|Nombre registrado"}
+{"scenario": "credit_note", "i": 2, "command": "!   1.000     15.00 CAFE", "response": "0|Item|CAFE|1.000|15.00|2.07|15.00"}
+{"scenario": "credit_note", "i": 3, "command": "10015.00", "response": "0|Pago: 15.00|Pendiente: 0.00"}
+{"scenario": "credit_note", "i": 4, "command": "101", "response": "0|Factura 1|Total: 15.00|Impreso:1"}
+{"scenario": "credit_note", "i": 5, "command": "d1", "response": "0|Nota credito abierta"}
+{"scenario": "credit_note", "i": 6, "command": "iR*J-12345678-9", "response": "0|RIF registrado"}
+{"scenario": "credit_note", "i": 7, "command": "iS*EMPRESA C.A.", "response": "0|Nombre registrado"}
+{"scenario": "credit_note", "i": 8, "command": "iF*001", "response": "0|Nro factura referenciada"}
+{"scenario": "credit_note", "i": 9, "command": "iD*2024-01-15", "response": "0|Fecha factura referenciada"}
+{"scenario": "credit_note", "i": 10, "command": "iI*MLTFHKA001", "response": "0|Serial fiscal registrado"}
+{"scenario": "credit_note", "i": 11, "command": "d1   1.000     15.00 CAFE", "response": "0|NC Item|CAFE|1.000|15.00|2.07|15.00"}
+{"scenario": "credit_note", "i": 12, "command": "101", "response": "0|Nota de Credito 1|Total: 15.00|Impreso:2"}
+{"scenario": "credit_note", "i": 13, "command": "S2", "response": "1|0|0|0.00|0.00|0.00|0"}
+{"scenario": "debit_note", "i": 0, "command": "d2", "response": "0|Nota debito abierta"}
+{"scenario": "debit_note", "i": 1, "command": "iR*J-12345678-9", "response": "0|RIF registrado"}
+{"scenario": "debit_note", "i": 2, "command": "iF*002", "response": "0|Nro factura referenciada"}
+{"scenario": "debit_note", "i": 3, "command": "`1   1.000     15.00 CAFE", "response": "0|ND Item|CAFE|1.000|15.00|2.07|15.00"}
+{"scenario": "debit_note", "i": 4, "command": "101", "response": "0|Nota de Debito 1|Total: 15.00|Impreso:1"}
+{"scenario": "debit_note", "i": 5, "command": "S2", "response": "1|0|0|0.00|0.00|0.00|0"}
+{"scenario": "non_fiscal", "i": 0, "command": "80$", "response": "0|DNF abierto"}
+{"scenario": "non_fiscal", "i": 1, "command": "80!PRESUPUESTO", "response": "0|Texto impreso"}
+{"scenario": "non_fiscal", "i": 2, "command": "80*Linea de texto libre", "response": "0|Contenido impreso"}
+{"scenario": "non_fiscal", "i": 3, "command": "81", "response": "0|DNF cerrado"}
+{"scenario": "status_suite", "i": 0, "command": "S1", "response": "0|MLTFHKA001|J-12345678-9|0|0|0|0|0|0|0.00|<TS>"}
+{"scenario": "status_suite", "i": 1, "command": "S2", "response": "1|0|0|0.00|0.00|0.00|0"}
+{"scenario": "status_suite", "i": 2, "command": "S3", "response": "16.00|8.00|30.00|1|1|1"}
+{"scenario": "status_suite", "i": 3, "command": "S4", "response": "0||0.00"}
+{"scenario": "status_suite", "i": 4, "command": "S5", "response": "MLTFHKA001|J-12345678-9|1|4.00|3.60|0"}
+{"scenario": "status_suite", "i": 5, "command": "S6", "response": "ERROR|0x50|Comando no implementado"}
+{"scenario": "status_suite", "i": 6, "command": "S7", "response": "ERROR|0x50|Comando no implementado"}
+{"scenario": "status_suite", "i": 7, "command": "S8E", "response": "RIF: J-12345678-9|FACTURA FISCAL|AVENIDA PRINCIPAL|CARACAS - VENEZUELA||||"}
+{"scenario": "status_suite", "i": 8, "command": "S8P", "response": "GRACIAS POR SU COMPRA|||||||"}
+{"scenario": "payments_discounts", "i": 0, "command": "!   1.000    100.00 SERVICIO", "response": "0|Item|SERVICIO|1.000|100.00|13.79|100.00"}
+{"scenario": "payments_discounts", "i": 1, "command": "70010.00", "response": "0|Descuento: 10.00"}
+{"scenario": "payments_discounts", "i": 2, "command": "7015.00", "response": "0|Recargo: 5.00"}
+{"scenario": "payments_discounts", "i": 3, "command": "103Pago parcial", "response": "0|Descripcion pago"}
+{"scenario": "payments_discounts", "i": 4, "command": "10050.00", "response": "0|Pago: 50.00|Pendiente: 45.00"}
+{"scenario": "payments_discounts", "i": 5, "command": "S4", "response": "0|50.00|0.00"}
+{"scenario": "payments_discounts", "i": 6, "command": "S2", "response": "0|0|1|86.21|13.79|45.00|1"}
+{"scenario": "payments_discounts", "i": 7, "command": "101", "response": "0|Factura 1|Total: 100.00|Impreso:1"}
+{"scenario": "drawer_comment", "i": 0, "command": "0", "response": "0|Gaveta abierta"}
+{"scenario": "drawer_comment", "i": 1, "command": "@COMENTARIO una nota", "response": "0|Comentario"}
+{"scenario": "drawer_comment", "i": 2, "command": "4", "response": "0|OK"}
+{"scenario": "reports_x2_z2", "i": 0, "command": "!   1.000     20.00 TE", "response": "0|Item|TE|1.000|20.00|2.76|20.00"}
+{"scenario": "reports_x2_z2", "i": 1, "command": "10020.00", "response": "0|Pago: 20.00|Pendiente: 0.00"}
+{"scenario": "reports_x2_z2", "i": 2, "command": "101", "response": "0|Factura 1|Total: 20.00|Impreso:1"}
+{"scenario": "reports_x2_z2", "i": 3, "command": "U1X", "response": "0|Reporte X2 #1|Ventas: 20.00|Impreso:2"}
+{"scenario": "reports_x2_z2", "i": 4, "command": "U1Z", "response": "0|Reporte Z2 #1|Ventas: 20.00|Impreso:3"}
+{"scenario": "exempt_quirk", "i": 0, "command": "    1.000     10.00 EXENTO", "response": "ERROR|0x50|Comando desconocido"}
+{"scenario": "runes_desc", "i": 0, "command": "iS*NIÑO & ASOC.", "response": "0|Nombre registrado"}
+{"scenario": "runes_desc", "i": 1, "command": "!   1.000     15.00 CAFÉ ÑUÑOÁ", "response": "0|Item|CAFÉ ÑUÑOÁ|1.000|15.00|2.07|15.00"}
+{"scenario": "runes_desc", "i": 2, "command": "101", "response": "0|Factura 1|Total: 15.00|Impreso:1"}
+{"scenario": "errors_edge", "i": 0, "command": "", "response": "ERROR|0x50|Comando desconocido"}
+{"scenario": "errors_edge", "i": 1, "command": "   ", "response": "ERROR|0x50|Comando desconocido"}
+{"scenario": "errors_edge", "i": 2, "command": "FOO", "response": "ERROR|0x50|Comando desconocido"}
+{"scenario": "errors_edge", "i": 3, "command": "!", "response": "ERROR|0x50|Item format invalid"}
+{"scenario": "errors_edge", "i": 4, "command": "!   x.000     15.00 BAD", "response": "ERROR|0x50|Invalid qty/price"}
+{"scenario": "errors_edge", "i": 5, "command": "d1", "response": "0|Nota credito abierta"}
+{"scenario": "errors_edge", "i": 6, "command": "d1short", "response": "ERROR|0x50|Credit note item format invalid"}
+{"scenario": "errors_edge", "i": 7, "command": "`x", "response": "ERROR|0x50|Comando desconocido"}
+{"scenario": "errors_edge", "i": 8, "command": "100abc", "response": "ERROR|0x50|could not convert string to float: 'abc'"}
+{"scenario": "errors_edge", "i": 9, "command": "100", "response": "ERROR|0x50|could not convert string to float: ''"}
+{"scenario": "errors_edge", "i": 10, "command": "700", "response": "ERROR|0x50|could not convert string to float: ''"}
+{"scenario": "errors_edge", "i": 11, "command": "701", "response": "ERROR|0x50|could not convert string to float: ''"}
+{"scenario": "errors_edge", "i": 12, "command": "iR*", "response": "0|RIF registrado"}
+{"scenario": "errors_edge", "i": 13, "command": "iS*", "response": "0|Nombre registrado"}
+{"scenario": "errors_edge", "i": 14, "command": "i01", "response": "0|Direccion registrada"}
+{"scenario": "errors_edge", "i": 15, "command": "iF*", "response": "0|Nro factura referenciada"}
+{"scenario": "errors_edge", "i": 16, "command": "iD*", "response": "0|Fecha factura referenciada"}
+{"scenario": "errors_edge", "i": 17, "command": "iI*", "response": "0|Serial fiscal registrado"}
+{"scenario": "errors_edge", "i": 18, "command": "@Foo|bar", "response": "@Response|Error|0x50|Comando desconocido"}
+{"scenario": "errors_edge", "i": 19, "command": "81", "response": "0|DNF cerrado"}
+{"scenario": "errors_edge", "i": 20, "command": "3", "response": "0|Subtotal: 0.00 + 0.00 = 0.00"}
+{"scenario": "errors_edge", "i": 21, "command": "101", "response": "0|Cerrado"}
+{"scenario": "errors_edge", "i": 22, "command": "0", "response": "0|Gaveta abierta"}

@@ -1,0 +1,37 @@
+                                          
+  * DOCUMENTO EN CURSO - VISTA PREVIA *   
+            EMPRESA SIN NOMBRE            
+==========================================
+              FACTURA FISCAL              
+               N° 00000001                
+           <TS>           
+==========================================
+CLIENTE:
+  RIF/C.I: J-99999999-9
+CLIENTE EN CURSO
+------------------------------------------
+   CANT DESCRIPCION          PREC  IVA   IMPORTE
+------------------------------------------
+  1.000 CAFE                15.00  G16     15.00
+------------------------------------------
+SUBTOTAL:                            15,00
+  BASE IVA 16%:                      12,93
+  IVA 16%:                            2,07
+==========================================
+TOTAL Bs.:                           15,00
+==========================================
+EFECTIVO:                            15,00
+------------------------------------------
+  SON: QUINCE CON 00/100
+------------------------------------------
+MAQUINA:                        MLTFHKA001
+RIF MAQ.:                     J-12345678-9
+COND. PAGO:                        CONTADO
+        ART. 63 Ley IVA - Ley Org.        
+     Simplificacion y Racionalizacion     
+          del Proceso Tributario          
+------------------------------------------
+          GRACIAS POR SU COMPRA           
+     * * * * * * * * * * * * * * * *      
+         DOCUMENTO FISCAL DIGITAL         
+       SIMULADOR - NO VALOR FISCAL        

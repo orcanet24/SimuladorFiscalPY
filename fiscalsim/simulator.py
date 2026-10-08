@@ -15,6 +15,17 @@ from . import render as paper
 from .persistence import save_state, load_state
 
 
+# "103 <texto>" (PAYMENT_DESC) can declare the method used by the next "100"
+_PAYMENT_METHOD_MAP = {
+    "cash": "cash", "efectivo": "cash", "money": "cash",
+    "card": "card", "tarjeta": "card",
+    "transfer": "transfer", "transferencia": "transfer",
+    "credit": "credit", "credito": "credit", "crédito": "credit",
+    "check": "check", "cheque": "check",
+    "mobile": "mobile", "pago movil": "mobile",
+}
+
+
 class FiscalPrinterSimulator:
     """Base fiscal printer simulator"""
     
@@ -292,10 +303,17 @@ class FiscalPrinterSimulator:
         
         elif cmd_type == "PAYMENT":
             amount = float(params[0]) if params else 0
-            state.add_payment(amount)
+            # 103 <metodo> fija la forma de pago del siguiente 100
+            method = state.pending_payment_method or "cash"
+            state.pending_payment_method = ""
+            state.add_payment(amount, method)
             return f"0|Pago: {amount:.2f}|Pendiente: {state.amount_payable:.2f}"
         
         elif cmd_type == "PAYMENT_DESC":
+            desc = (params[0] if params else "").strip().lower()
+            method = _PAYMENT_METHOD_MAP.get(desc)
+            if method:
+                state.pending_payment_method = method
             return "0|Descripcion pago"
         
         elif cmd_type == "DISCOUNT":

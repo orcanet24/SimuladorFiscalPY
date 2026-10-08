@@ -1,6 +1,6 @@
 -- Schema for Fiscal Printer Protocol Documentation Database
 -- Database: docs.db
--- Location: C:/Proyectos/GO/SimuladorFiscalGO/
+-- Location: SimuladorFiscalPY/
 
 -- Enable foreign keys
 PRAGMA foreign_keys = ON;

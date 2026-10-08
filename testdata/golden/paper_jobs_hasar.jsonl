@@ -1,0 +1,102 @@
+invoice_x_z/receipt/1	            EMPRESA SIN NOMBRE            
+invoice_x_z/receipt/1	==========================================
+invoice_x_z/receipt/1	              FACTURA FISCAL              
+invoice_x_z/receipt/1	               N° 00000001                
+invoice_x_z/receipt/1	           <TS>           
+invoice_x_z/receipt/1	==========================================
+invoice_x_z/receipt/1	CLIENTE:
+invoice_x_z/receipt/1	  RIF/C.I: J-12345678-9
+invoice_x_z/receipt/1	EMPRESA C.A.
+invoice_x_z/receipt/1	Av Principal
+invoice_x_z/receipt/1	------------------------------------------
+invoice_x_z/receipt/1	   CANT DESCRIPCION          PREC  IVA   IMPORTE
+invoice_x_z/receipt/1	------------------------------------------
+invoice_x_z/receipt/1	  2.000 Cafe                15.00  G16     30.00
+invoice_x_z/receipt/1	  3.000 Pan                  8.00   R8     24.00
+invoice_x_z/receipt/1	------------------------------------------
+invoice_x_z/receipt/1	SUBTOTAL:                            54,00
+invoice_x_z/receipt/1	  BASE IVA 16%:                      25,86
+invoice_x_z/receipt/1	  IVA 16%:                            4,14
+invoice_x_z/receipt/1	  BASE IVA 8%:                       22,22
+invoice_x_z/receipt/1	  IVA 8%:                             1,78
+invoice_x_z/receipt/1	==========================================
+invoice_x_z/receipt/1	TOTAL Bs.:                           54,00
+invoice_x_z/receipt/1	==========================================
+invoice_x_z/receipt/1	EFECTIVO:                           100,00
+invoice_x_z/receipt/1	CAMBIO:                              46,00
+invoice_x_z/receipt/1	------------------------------------------
+invoice_x_z/receipt/1	  SON: CINCUENTA Y CUATRO CON 00/100
+invoice_x_z/receipt/1	------------------------------------------
+invoice_x_z/receipt/1	MAQUINA:                      MLHSR615F001
+invoice_x_z/receipt/1	RIF MAQ.:                     J-98765432-1
+invoice_x_z/receipt/1	COND. PAGO:                        CONTADO
+invoice_x_z/receipt/1	        ART. 63 Ley IVA - Ley Org.        
+invoice_x_z/receipt/1	     Simplificacion y Racionalizacion     
+invoice_x_z/receipt/1	          del Proceso Tributario          
+invoice_x_z/receipt/1	------------------------------------------
+invoice_x_z/receipt/1	          GRACIAS POR SU COMPRA           
+invoice_x_z/receipt/1	     * * * * * * * * * * * * * * * *      
+invoice_x_z/receipt/1	         DOCUMENTO FISCAL DIGITAL         
+invoice_x_z/receipt/1	       SIMULADOR - NO VALOR FISCAL        
+invoice_x_z/x_report/2	            EMPRESA SIN NOMBRE            
+invoice_x_z/x_report/2	==========================================
+invoice_x_z/x_report/2	        REPORTE X - CORTE DE CAJA         
+invoice_x_z/x_report/2	             REPORTE N° 0001              
+invoice_x_z/x_report/2	           <TS>           
+invoice_x_z/x_report/2	==========================================
+invoice_x_z/x_report/2	DOCUMENTOS DEL DIA:
+invoice_x_z/x_report/2	  Facturas:                              1
+invoice_x_z/x_report/2	  Notas de credito:                      0
+invoice_x_z/x_report/2	  Notas de debito:                       0
+invoice_x_z/x_report/2	  No fiscales:                           0
+invoice_x_z/x_report/2	------------------------------------------
+invoice_x_z/x_report/2	VENTAS POR ALICUOTA:
+invoice_x_z/x_report/2	  GENERAL 16%:                       25,86
+invoice_x_z/x_report/2	    IVA:                              4,14
+invoice_x_z/x_report/2	  REDUCIDA 8%:                       22,22
+invoice_x_z/x_report/2	    IVA:                              1,78
+invoice_x_z/x_report/2	------------------------------------------
+invoice_x_z/x_report/2	FORMAS DE PAGO:
+invoice_x_z/x_report/2	  EFECTIVO:                         100,00
+invoice_x_z/x_report/2	==========================================
+invoice_x_z/x_report/2	TOTAL VENTAS:                        54,00
+invoice_x_z/x_report/2	TOTAL IVA:                            5,92
+invoice_x_z/x_report/2	==========================================
+invoice_x_z/x_report/2	         ESTE REPORTE NO REINICIA         
+invoice_x_z/x_report/2	           LOS TOTALES DEL DIA            
+invoice_x_z/x_report/2	------------------------------------------
+invoice_x_z/x_report/2	ULTIMA FACTURA:                   00000001
+invoice_x_z/x_report/2	     * * * * * * * * * * * * * * * *      
+invoice_x_z/x_report/2	       SIMULADOR - NO VALOR FISCAL        
+invoice_x_z/z_report/3	            EMPRESA SIN NOMBRE            
+invoice_x_z/z_report/3	==========================================
+invoice_x_z/z_report/3	        REPORTE Z - CIERRE DIARIO         
+invoice_x_z/z_report/3	             REPORTE N° 0001              
+invoice_x_z/z_report/3	           <TS>           
+invoice_x_z/z_report/3	==========================================
+invoice_x_z/z_report/3	DOCUMENTOS DEL DIA:
+invoice_x_z/z_report/3	  Facturas:                              1
+invoice_x_z/z_report/3	  Notas de credito:                      0
+invoice_x_z/z_report/3	  Notas de debito:                       0
+invoice_x_z/z_report/3	  No fiscales:                           0
+invoice_x_z/z_report/3	------------------------------------------
+invoice_x_z/z_report/3	VENTAS POR ALICUOTA:
+invoice_x_z/z_report/3	  GENERAL 16%:                       25,86
+invoice_x_z/z_report/3	    IVA:                              4,14
+invoice_x_z/z_report/3	  REDUCIDA 8%:                       22,22
+invoice_x_z/z_report/3	    IVA:                              1,78
+invoice_x_z/z_report/3	------------------------------------------
+invoice_x_z/z_report/3	FORMAS DE PAGO:
+invoice_x_z/z_report/3	  EFECTIVO:                         100,00
+invoice_x_z/z_report/3	==========================================
+invoice_x_z/z_report/3	TOTAL VENTAS:                        54,00
+invoice_x_z/z_report/3	TOTAL IVA:                            5,92
+invoice_x_z/z_report/3	==========================================
+invoice_x_z/z_report/3	              CIERRE DEL DIA              
+invoice_x_z/z_report/3	         TOTALES REINICIADOS TRAS         
+invoice_x_z/z_report/3	               ESTE REPORTE               
+invoice_x_z/z_report/3	------------------------------------------
+invoice_x_z/z_report/3	ULTIMA FACTURA:                   00000001
+invoice_x_z/z_report/3	CIERRES DIARIOS:                         1
+invoice_x_z/z_report/3	     * * * * * * * * * * * * * * * *      
+invoice_x_z/z_report/3	       SIMULADOR - NO VALOR FISCAL        

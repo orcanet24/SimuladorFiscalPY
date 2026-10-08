@@ -1,0 +1,59 @@
+      COMERCIAL LOS SIMULADORES C.A.      
+            RIF: J-12345678-9             
+             LOS SIMULADORES              
+  Avenida Principal de Los Chaguaramos,   
+    Edificio Fiscal, Piso 4, Oficina B    
+        CHACAO - CARACAS - MIRANDA        
+            Telf: 0212-9555123            
+ Rep. Legal: JUAN PEREZ RODRIGUEZ - C.I.  
+                V-12345678                
+ Actividad: VENTA DE EQUIPOS DE OFICINA Y 
+               SUMINISTROS                
+          CONTRIBUYENTE ESPECIAL          
+         AGENTE DE RETENCION IVA          
+==========================================
+              FACTURA FISCAL              
+               N° 00000042                
+           15/01/2026  10:30:00           
+==========================================
+CLIENTE:
+  RIF/C.I: V-12345678
+MARIA GARCIA DE LOPEZ
+Calle El Sol, Qta La Esperanza, Urb Las
+Flores
+------------------------------------------
+   CANT DESCRIPCION          PREC  IVA   IMPORTE
+------------------------------------------
+  2.000 CAFE EXCLUSIVO DE   15.50  G16     31.00
+  3.000 PAN                  8.00   R8     24.00
+  1.000 LICORES FINOS      100.00  A30    100.00
+  1.000 PAN EXENTO           5.00   EX      5.00
+------------------------------------------
+SUBTOTAL:                           159,00
+  BASE IVA 16%:                      26,72
+  IVA 16%:                            3,28
+  BASE IVA 8%:                       22,22
+  IVA 8%:                             1,78
+  BASE IVA 30%:                      76,92
+  IVA 30%:                           23,08
+  BASE EXENTA:                        5,00
+==========================================
+TOTAL Bs.:                          159,00
+==========================================
+EFECTIVO:                           200,00
+TARJETA:                              0,00
+CAMBIO:                              41,00
+------------------------------------------
+  SON: CIENTO CINCUENTA Y NUEVE CON 00/100
+------------------------------------------
+MAQUINA:                        MLTFHKA001
+RIF MAQ.:                     J-12345678-9
+COND. PAGO:                CONTADO 30 DIAS
+        ART. 63 Ley IVA - Ley Org.        
+     Simplificacion y Racionalizacion     
+          del Proceso Tributario          
+------------------------------------------
+          GRACIAS POR SU COMPRA           
+     * * * * * * * * * * * * * * * *      
+         DOCUMENTO FISCAL DIGITAL         
+       SIMULADOR - NO VALOR FISCAL        

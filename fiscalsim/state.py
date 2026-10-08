@@ -106,6 +106,8 @@ class FiscalPrinterState:
         self.reference_serial = ""
         # Payments of the current document only
         self.doc_payments: Dict[str, float] = {}
+        # Method declared by 103 <metodo>, applied to the next 100 payment
+        self.pending_payment_method = ""
     
         # Reports storage
         self.z_reports: List[Dict] = []

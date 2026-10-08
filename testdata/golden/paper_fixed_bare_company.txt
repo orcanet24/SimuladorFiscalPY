@@ -1,0 +1,32 @@
+            EMPRESA SIN NOMBRE            
+==========================================
+              FACTURA FISCAL              
+               N° 00000042                
+           15/01/2026  10:30:00           
+==========================================
+CLIENTE:
+  CONSUMIDOR FINAL
+------------------------------------------
+   CANT DESCRIPCION          PREC  IVA   IMPORTE
+------------------------------------------
+  1.000 X                    1.00  G16      1.00
+------------------------------------------
+SUBTOTAL:                             1,00
+  BASE IVA 16%:                       0,86
+  IVA 16%:                            0,14
+==========================================
+TOTAL Bs.:                            1,00
+==========================================
+------------------------------------------
+  SON: UNO CON 00/100
+------------------------------------------
+MAQUINA:                        MLTFHKA001
+RIF MAQ.:                     J-12345678-9
+        ART. 63 Ley IVA - Ley Org.        
+     Simplificacion y Racionalizacion     
+          del Proceso Tributario          
+------------------------------------------
+          GRACIAS POR SU COMPRA           
+     * * * * * * * * * * * * * * * *      
+         DOCUMENTO FISCAL DIGITAL         
+       SIMULADOR - NO VALOR FISCAL        

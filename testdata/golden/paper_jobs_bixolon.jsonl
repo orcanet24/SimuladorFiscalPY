@@ -1,0 +1,35 @@
+invoice/receipt/1	            EMPRESA SIN NOMBRE            
+invoice/receipt/1	==========================================
+invoice/receipt/1	              FACTURA FISCAL              
+invoice/receipt/1	               N° 00000001                
+invoice/receipt/1	           <TS>           
+invoice/receipt/1	==========================================
+invoice/receipt/1	CLIENTE:
+invoice/receipt/1	  CONSUMIDOR FINAL
+invoice/receipt/1	------------------------------------------
+invoice/receipt/1	   CANT DESCRIPCION          PREC  IVA   IMPORTE
+invoice/receipt/1	------------------------------------------
+invoice/receipt/1	  1.000 Item1              100.00  G16    100.00
+invoice/receipt/1	------------------------------------------
+invoice/receipt/1	SUBTOTAL:                           100,00
+invoice/receipt/1	  BASE IVA 16%:                      86,21
+invoice/receipt/1	  IVA 16%:                           13,79
+invoice/receipt/1	==========================================
+invoice/receipt/1	TOTAL Bs.:                          100,00
+invoice/receipt/1	==========================================
+invoice/receipt/1	EFECTIVO:                           116,00
+invoice/receipt/1	CAMBIO:                              16,00
+invoice/receipt/1	------------------------------------------
+invoice/receipt/1	  SON: CIEN CON 00/100
+invoice/receipt/1	------------------------------------------
+invoice/receipt/1	MAQUINA:                       MLBLN270001
+invoice/receipt/1	RIF MAQ.:                     J-55556666-3
+invoice/receipt/1	COND. PAGO:                        CONTADO
+invoice/receipt/1	        ART. 63 Ley IVA - Ley Org.        
+invoice/receipt/1	     Simplificacion y Racionalizacion     
+invoice/receipt/1	          del Proceso Tributario          
+invoice/receipt/1	------------------------------------------
+invoice/receipt/1	          GRACIAS POR SU COMPRA           
+invoice/receipt/1	     * * * * * * * * * * * * * * * *      
+invoice/receipt/1	         DOCUMENTO FISCAL DIGITAL         
+invoice/receipt/1	       SIMULADOR - NO VALOR FISCAL        
